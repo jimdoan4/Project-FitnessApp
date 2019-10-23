@@ -3,7 +3,7 @@ const Recipe = require('../models/Recipe.js');
 const recipeController = {
 	index: (req, res) => {
 		Recipe.find()
-			.then((recipes) => {  // Find all of the users from the database
+			.then((recipes) => {  // Find all of the recipes from the database
 				console.log(recipes);
 				res.json(recipes);
 			})
@@ -13,7 +13,7 @@ const recipeController = {
 	},
 	create: async (req, res) => {
 		try {
-			const newRecipe = req.body;  // create a new User, let Mongoose give the default values
+			const newRecipe = req.body;  // create a new Recipe, let Mongoose give the default values
 			const savedRecipe = await Recipe.create(newRecipe);
 			res.json(savedRecipe);
 		} catch (err) {

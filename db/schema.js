@@ -17,7 +17,7 @@ const ExerciseSchema = new Schema({
     equipment: String,
     difficulty: String,
     instruction: String,
-    info: Array
+ 
 })
 
 //Exporting Schemas

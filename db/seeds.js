@@ -1,17 +1,17 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 //Requiring Models
-// const Exercise = require("../models/Exercise.js");
+const Exercise = require("../models/Exercise.js");
 const Recipe = require("../models/Recipe.js");
 
 //Exercise information to seed to MongoDB
-// const pushUp = new Exercise({
-//     fitnessImg: "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/1109-feet-elevated-pushup.jpg?itok=urXPS8Lq",
-//     type: "Push Up",
-//     equipment: "No Equipment",
-//     difficulty: "Intermediate",
-//     instruction: "Starting Position: Kneel on an exercise mat or floor and bring your feet together behind you."
-// });
+const pushUp = new Exercise({
+     fitnessImg: "https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/1109-feet-elevated-pushup.jpg?itok=urXPS8Lq",
+     type: "Push Up",
+     equipment: "No Equipment",
+     difficulty: "Intermediate",
+     instruction: "Starting Position: Kneel on an exercise mat or floor and bring your feet together behind you."
+});
 
 //Recipe information to seed to MongoDB
 const bakedChicken = new Recipe({
@@ -23,6 +23,9 @@ const bakedChicken = new Recipe({
 });
 
 
+Exercise.deleteMany({})
+    .then(() => pushUp.save())
+    .then(() => console.log("Successful Save"));
 
 Recipe.deleteMany({})
     .then(() => bakedChicken.save())
