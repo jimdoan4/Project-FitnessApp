@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar.jsx";
 import Home from './components/Home.jsx'
 import Recipes from './components/Recipes.jsx'
 import Exercises from './components/Exercises.jsx'
+import Shop from './components/Shop.jsx'
+import Benefits from './components/Benefits.jsx'
 
 
 class App extends Component {
@@ -16,6 +18,8 @@ class App extends Component {
               <Route exact path='/' component={Home} />
               <Route exact path='/recipes/' component={Recipes} />
               <Route exact path='/exercises/' component={Exercises} />
+              <Route exact path='/shop/' component={Shop} />
+              <Route exact path='/members/' component={Benefits} />
        
             </Switch>
           </div>

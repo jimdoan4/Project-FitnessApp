@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ExerciseForm from "./ExerciseForm.jsx";
 
 export default class Exercises extends Component {
-    state = {
+  state = {
     exercises: [],
     newExercise: {
       fitnessImg: "",
@@ -25,21 +25,19 @@ export default class Exercises extends Component {
 
   //Function to get all Facts from axios via our API
   getAllExercises = () => {
-    axios
-      .get(`/api/exercises/`)
-      .then(res => {
-        this.setState({ exercises: res.data });
-    //   })
-    //   .catch(err => {
-    //     console.log("You messed up somewhere, Jim. Go back!", err);
-      });
+    axios.get(`/api/exercises/`).then(res => {
+      this.setState({ exercises: res.data });
+      //   })
+      //   .catch(err => {
+      //     console.log("You messed up somewhere, Jim. Go back!", err);
+    });
   };
 
   //Creates a New Exercise
   createExercise = e => {
     e.preventDefault();
     axios
-      .post('/api/exercises/', {
+      .post("/api/exercises/", {
         fitnessImg: this.state.newExercise.fitnessImg,
         type: this.state.newExercise.type,
         instruction: this.state.newExercise.instruction,
@@ -59,22 +57,19 @@ export default class Exercises extends Component {
           },
           displayExerciseForm: false,
           exercises: exercisesList
-        
         });
       });
   };
 
   // Deletes an exercise
   deleteExercise = () => {
-    axios
-      .delete(`/api/exercises/${this.props.match.params.id}`)
-      .then(res => {
-        this.setState({ redirectToHome: true });
-      });
+    axios.delete(`/api/exercises/${this.props.match.params.id}`).then(res => {
+      this.setState({ redirectToHome: true });
+    });
   };
 
   //Toggles the Edit form
-toggleExerciseForm = () => {
+  toggleExerciseForm = () => {
     this.setState((state, props) => {
       return {
         displayExerciseForm: !state.displayExerciseForm
@@ -100,16 +95,36 @@ toggleExerciseForm = () => {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://media.self.com/photos/57dc11208a461ae034a90dc8/8:3/w_1280,c_limit/sub-channel-fitness-workouts.jpg"
+            src="https://images7.alphacoders.com/708/708636.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay">
-            <h5 className="card-title centered workout-text workout-all-margin">
+          <h1 className="display-3 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "7.7vw"}}>
               WORKOUTS
-            </h5>
+            </h1>
           </div>
         </div>
-        <hr className="individual-underline container audio-card-margin"></hr>
+        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "#c7c6c5"}}>
+          <div class="container text-center">
+            <h1 class="display-5">PERSONAL TRAINING AT EQUINOX</h1>
+            <p class="lead">
+              You can, and you will. With the right personal trainer, you’re
+              partners in the impossible.
+            </p>
+            <button className="start-button">GET STARTED TODAY</button>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "white", marginTop:"-30px"}}>
+          <div class="container text-center">
+            <h1 class="display-5">MAKE THE IMPOSSIBLE HAPPEN</h1>
+            <p class="lead">
+            Together, you and your dedicated personal trainer break records, tear down walls, and unlock the extraordinary. At every step, you’re driven by passionate trainers backed by the latest science and our industry-leading institute. Our program. Your results.
+            </p>
+            <button className="start-button">GET STARTED TODAY</button>
+          </div>
+        </div>
+        <br />
+
         <div className="card-flex">
           {this.state.exercises.map(exercise => {
             return (
@@ -149,7 +164,6 @@ toggleExerciseForm = () => {
             />
           </div>
         </div>
-      
       </div>
     );
   }

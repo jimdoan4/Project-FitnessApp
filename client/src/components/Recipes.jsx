@@ -31,21 +31,19 @@ export default class Recipes extends Component {
 
   //Function to get all Facts from axios via our API
   getAllRecipes = () => {
-    axios
-      .get(`/api/recipes/`)
-      .then(res => {
-        this.setState({ recipes: res.data });
-    //   })
-    //   .catch(err => {
-    //     console.log("You messed up somewhere, Jim. Go back!", err);
-      });
+    axios.get(`/api/recipes/`).then(res => {
+      this.setState({ recipes: res.data });
+      //   })
+      //   .catch(err => {
+      //     console.log("You messed up somewhere, Jim. Go back!", err);
+    });
   };
 
   //Creates a New Recipe
   createRecipe = e => {
     e.preventDefault();
     axios
-      .post('/api/recipes/', {
+      .post("/api/recipes/", {
         recipeImg: this.state.newRecipe.recipeImg,
         recipeName: this.state.newRecipe.recipeName,
         cookingTime: this.state.newRecipe.cookingTime,
@@ -65,7 +63,6 @@ export default class Recipes extends Component {
           },
           displayRecipeForm: false,
           recipes: recipesList
-        
         });
       });
   };
@@ -80,7 +77,7 @@ export default class Recipes extends Component {
   };
 
   //Toggles the Edit form
-toggleRecipeForm = () => {
+  toggleRecipeForm = () => {
     this.setState((state, props) => {
       return {
         displayRecipeForm: !state.displayRecipeForm
@@ -99,50 +96,81 @@ toggleRecipeForm = () => {
   render() {
     return (
       <div>
-      <div className="bg-dark text-white workout-margin workout-jumbo">
-                    <img className="card-img" src="https://foodrevolution.org/wp-content/uploads/2019/01/iStock-855098134-marilyna-featured.jpg" alt="Workout" />
-                    <div className="card-img-overlay">
-                        <h5 className="card-title centered workout-text">RECIPES</h5>
+        <div className="bg-dark text-white workout-margin workout-jumbo">
+          <img
+            className="card-img"
+            src="https://www.rd.com/wp-content/uploads/2018/04/50-Fitness-Myths-that-can-Seriously-Damage-Your-Health-15-760x506.jpg"
+            alt="Workout"
+          />
+          <div className="card-img-overlay">
+            <h1 className="display-3 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "7.7vw"}}>RECIPES</h1>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container text-center">
+            <h1 class="display-5">PERSONAL TRAINING AT EQUINOX</h1>
+            <p class="lead">
+              You can, and you will. With the right personal trainer, you’re
+              partners in the impossible.
+            </p>
+            <button className="start-button">GET STARTED TODAY</button>
+          </div>
+        </div>
+        <div className="card-flex">
+          {this.state.recipes.map(recipe => {
+            return (
+              <div
+                className="flex-container card-flex"
+                style={{ marginTop: "1rem", marginLeft: "2rem;" }}
+              >
+                <div
+                  key={recipe._id}
+                  className="flex-container card-flex card-margin-all"
+                >
+                  <div className="card" style={{ width: "600px" }}>
+                    <img
+                      src={recipe.recipeImg}
+                      className="card-img-top"
+                      alt={recipe.recipeName}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">
+                        <Link to={`/recipes/${recipe.id}/`}>
+                          {recipe.recipeName}
+                        </Link>
+                      </h5>
+                      <p className="card-text">
+                        Cook Time: {recipe.cookingTime}
+                      </p>
+                      <p className="card-text">Calories: {recipe.ingredient}</p>
+                      <p className="card-text">
+                        Description: {recipe.recipeDescription}
+                      </p>
+                      <Link
+                        to={`/recipes/${recipe.id}/`}
+                        className="btn btn-primary"
+                      >
+                        Get Recipe
+                      </Link>
                     </div>
+                  </div>
                 </div>
-                {/* <hr className="individual-underline container"></hr> */}
-                <div className="card-flex">
-                    {this.state.recipes.map(recipe => {
-                        return (
-                            <div className="flex-container card-flex" style={{ marginTop: "1rem", marginLeft: "2rem;" }}>
-                                <div key={recipe._id} className="flex-container card-flex card-margin-all">
-                                    <div className="card" style={{ width: "600px" }}>
-                                        <img src={recipe.recipeImg} className="card-img-top" alt={recipe.recipeName} />
-                                        <div className="card-body">
-                                            <h5 className="card-title"><Link to={`/recipes/${recipe.id}/`}>{recipe.recipeName}</Link></h5>
-                                            <p className="card-text">Cook Time: {recipe.cookingTime}</p>
-                                            <p className="card-text">Calories: {recipe.ingredient}</p>
-                                            <p className="card-text">Description: {recipe.recipeDescription}</p>
-                                            <Link to={`/recipes/${recipe.id}/`} className="btn btn-primary">Get Recipe</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-                <h1 className="card-margin-all">Create Recipe</h1>
-                <div className="jumbotron jumbotron-fluid recipe-jumbotron">
-                    <div className="container">
-                        <RecipeForm
-                            recipe={this.state.newRecipe}
-                            handleSubmit={this.createRecipe}
-                            handleRecipeChange={this.handleChange}
-                            submitBtnText="Create"
-                        />
-                    </div>
-                </div>
-                </div>
-           
-
+              </div>
+            );
+          })}
+        </div>
+        <h1 className="card-margin-all">Create Recipe</h1>
+        <div className="jumbotron jumbotron-fluid recipe-jumbotron">
+          <div className="container">
+            <RecipeForm
+              recipe={this.state.newRecipe}
+              handleSubmit={this.createRecipe}
+              handleRecipeChange={this.handleChange}
+              submitBtnText="Create"
+            />
+          </div>
+        </div>
+      </div>
     );
   }
 }
-
-
-        

@@ -7,7 +7,7 @@ class Navbar extends Component {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li>
             <Link to="/exercises/">TRAINING</Link>
@@ -16,11 +16,11 @@ class Navbar extends Component {
             <Link to="/recipes/">RECIPES</Link>
           </li>
           <li>
-            <Link to="">SHOP</Link>
+            <Link to="/shop/">SHOP</Link>
           </li>
 
           <li>
-            <Link to="">MEMBER BENEFITS</Link>
+            <Link to="/members/">MEMBER BENEFITS</Link>
           </li>
         </ul>
       </div>
