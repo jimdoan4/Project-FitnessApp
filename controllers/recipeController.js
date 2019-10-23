@@ -1,38 +1,59 @@
-const Recipe = require('../models/Recipe.js')
-
+const Recipe = require('../models/Recipe.js');
 
 const recipeController = {
-    index: (req, res) => {
-        Recipe.find().then((recipes) => { // Find all of the events from the database
-            res.json(recipes) // send the events back to the client
-        }).catch((err) => { 
-            console.log("You messed up!", err) // If there is any error, tell the client something went wrong on the server
-        })
-    },
-     //Show the Recipe on to the page
-    show: (req, res) => {
-        Recipe.findById(req.params.id).then(recipe => { // Show the information requested
-            res.json(recipe) // send the recipes back to the client
-        })
-    },
-    //Creates a New Recipe
-    create: (req, res) => {
-        Recipe.create(req.body).then(recipe => {
-            res.json(recipe) // send the recipes back to the client
-        })
-    },
-     //Update the current Recipe
-    update: async(req, res) => {
-        Recipe.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(recipe => {
-            res.json(recipe)
-        })
-    },
-     //Delete the current Recipe
-    delete: (req, res) => {
-        Recipe.findByIdAndDelete(req.params.id).then(recipe => {
-            res.json(recipe) // Send back a status tell the client that the delete was successful
-        })
-    }
-}
+	index: (req, res) => {
+		Recipe.find()
+			.then((recipes) => {  // Find all of the users from the database
+				console.log(recipes);
+				res.json(recipes);
+			})
+			.catch((err) => {
+				console.log(err);  // If there is any error, tell the client something went wrong on the server
+			});
+	},
+	create: async (req, res) => {
+		try {
+			const newRecipe = req.body;  // create a new User, let Mongoose give the default values
+			const savedRecipe = await Recipe.create(newRecipe);
+			res.json(savedRecipe);
+		} catch (err) {
+			console.log(err);
+			res.status(500).json(err);  // If there is any error, tell the client something went wrong on the server
+		}
+	},
+	show: async (req, res) => {
+		try {
+			const recipeId = req.params.recipeId;
+			const recipe = await Recipe.findById(recipeId);
+			res.json(recipe);  // Show the information requested
+		} catch (err) {
+			console.log(err);
+			res.json(err);  // If there is any error, tell the client something went wrong on the server
+		}
+	},
+	update: async (req, res) => {
+		try {
+			const recipeId = req.params.recipeId;
+			const updatedRecipe = req.body;
+			const savedRecipe = await Recipe.findByIdAndUpdate(recipeId, updatedRecipe);
+			res.json(savedRecipe);  // Send the updated information back to the client
+		} catch (err) {
+			console.log(err);
+			res.status(500).json(err);  // If there is any error, tell the client something went wrong on the server
+		}
+	},
+	delete: async (req, res) => {
+		try {
+			const recipeId = req.params.recipeId;
+			await Recipe.findByIdAndRemove(recipeId); // Delete the information from the database
+			res.json({
+				msg: `Successfully Deleted ${recipeId}`
+			});
+		} catch (err) {
+			console.log(err);
+			res.status(500).json(err);  // If there is any error, tell the client something went wrong on the server
+		}
+	}
+};
 
-module.exports = recipeController
+module.exports = recipeController;

@@ -21,7 +21,7 @@ app.get('/*', (req,res) => {
     res.sendFile(__dirname + '/client/build/index.html')
 })
 
-// CONNECT MONGOOSE TO "bespoke"
+// CONNECT MONGOOSE 
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {

@@ -23,6 +23,6 @@ const ExerciseSchema = new Schema({
 //Exporting Schemas
 module.exports = {
 	RecipeSchema: RecipeSchema,
-	ExerciseSchema: ExerciseSchema
+	ExerciseSchema: ExerciseSchema,
 
 };

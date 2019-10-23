@@ -7,31 +7,31 @@ export default function RecipeForm(props) {
             <h1 className="text-white"></h1>
             <form onSubmit={props.handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="name" className="text-white">Name:</label>
+                    <label htmlFor="recipeName" className="text-white">Name:</label>
                     <input className="form-control"
                         type="text"
-                        id="name"
-                        name="name"
-                        value={props.recipe.name}
+                        id="recipeName"
+                        name="recipeName"
+                        value={props.recipe.recipeName}
                         onChange={props.handleRecipeChange}
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="image_url" className="text-white">Image URL:</label>
+                    <label htmlFor="recipeImg" className="text-white">Image URL:</label>
                     <input className="form-control"
                         type="text"
-                        id="image_url"
-                        name="image_url"
+                        id="recipeImg"
+                        name="recipeImg"
                         value={props.recipe.recipeImg}
                         onChange={props.handleRecipeChange}
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="calories" className="text-white">Ingredient:</label>
+                    <label htmlFor="ingredient" className="text-white">Ingredient:</label>
                     <input className="form-control"
                         type="text"
-                        id="calories"
-                        name="calories"
+                        id="ingredient"
+                        name="ingredient"
                         value={props.recipe.ingredient}
                         onChange={props.handleRecipeChange}
                     />
@@ -40,18 +40,18 @@ export default function RecipeForm(props) {
                     <label htmlFor="prep_time" className="text-white">Prep Time:</label>
                     <input className="form-control"
                         type="text"
-                        id="prep_time"
-                        name="prep_time"
+                        id="cookingTime"
+                        name="cookingTime"
                         value={props.recipe.cookingTime}
                         onChange={props.handleRecipeChange}
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="directions" className="text-white">Directions:</label>
+                    <label htmlFor="recipeDirection" className="text-white">Directions:</label>
                     <textarea className="form-control"
                         type="text"
-                        id="directions"
-                        name="directions"
+                        id="recipeDirection"
+                        name="recipeDirection"
                         value={props.recipeDirection}
                         onChange={props.handleRecipeChange}
                     />
