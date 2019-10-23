@@ -2,49 +2,49 @@ const express = require('express')
 const router = express.Router()
 
 const exerciseController = require('../controllers/exerciseController.js')
-const reviewController = require('../controllers/reviewController.js')
+// const reviewController = require('../controllers/reviewController.js')
 const recipeController = require('../controllers/recipeController.js')
 
 //Displays all of the Exercise Information
-router.get('/', exerciseController.index)
+router.get('/exercises/', exerciseController.index)
 
 //Displays the individual ID
-router.get('/:id', exerciseController.show)
+router.get('/exercises/:exerciseId', exerciseController.show)
 
 //Creates a New Exercise Information Card
-router.post('/', exerciseController.create)
+router.post('/exercises/', exerciseController.create)
 
 //Updates a Single Exercise Information
-router.put('/:id', exerciseController.update)
+router.put('/exercises/:exerciseId', exerciseController.update)
 
 //Delete a Single Exercise Information
-router.delete('/:id', exerciseController.delete)
+router.delete('/exercises/:exerciseId', exerciseController.delete)
 
 //Review Exercise
 //router.get('/:id/review/:reviewId', reviewController.show)
-router.get('/:id/review', reviewController.index)
+// router.get('/exercises/:exerciseId/reviews/', reviewController.index)
 
-router.get('/:id/review/:reviewId', reviewController.show)
+// router.get('/exercises/:exerciseId/reviews/:reviewId/', reviewController.show)
 
 //router.post('/:id/review/:reviewId', reviewController.create)
-router.post('/:id/review', reviewController.create)
+// router.post('/exercises/:exerciseId/reviews/', reviewController.create)
 
-router.delete('/:id/review/:reviewId', reviewController.delete)
+// router.delete('/exercises/:exerciseId/reviews/:reviewId/', reviewController.delete)
 
 
 //Displays all of the Recipe Information
-router.get('/', recipeController.index)
+router.get('/recipes/', recipeController.index)
 
 //Displays the individual ID
-router.get('/:id', recipeController.show)
+router.get('/recipes/:recipeId', recipeController.show)
 
 //Creates a New Recipe Information Card
-router.post('/', recipeController.create)
+router.post('/recipes/', recipeController.create)
 
 //Updates a Single Recipe Information
-router.put('/:id', recipeController.update)
+router.put('/recipes/:recipeId', recipeController.update)
 
 //Delete a Single Recipe Information
-router.delete('/:id', recipeController.delete)
+router.delete('/recipes/:recipeId', recipeController.delete)
 
 module.exports = router

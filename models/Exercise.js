@@ -2,12 +2,12 @@ const mongoose = require('../db/connections.js')
 const Schema = mongoose.Schema
 
 //Review Schema
-const Review = new Schema({
-    username: String,
-    date: String,
-    reviewDescription: String,
-    review: Array
-})
+// const Review = new Schema({
+//     username: String,
+//     date: String,
+//     reviewDescription: String,
+//     review: Array
+// })
 
 //Exercise Schema
 const Exercise = new Schema({
@@ -16,13 +16,11 @@ const Exercise = new Schema({
     equipment: String,
     difficulty: String,
     instruction: String,
-    info: Array,
-    additionalReview: [Review]
+    info: Array
 })
 
 
 //Exporting Schemas
 module.exports = {
-    Exercise: mongoose.model('Exercise', Exercise),
-    Review: mongoose.model('Review', Review)
+    Exercise: mongoose.model('Exercise', Exercise)
 }
