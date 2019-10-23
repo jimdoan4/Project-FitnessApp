@@ -2,71 +2,98 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import RecipeForm from "./RecipeForm.jsx";
-import Navbar from "./Navbar.jsx";
 
 export default class Recipes extends Component {
   state = {
     recipes: [],
     newRecipe: {
+      recipeName: "",
       recipeImg: "",
       ingredient: "",
       recipeDescription: "",
       cookingTime: ""
-    }
+    },
+    isRecipeFormDisplayed: false,
+    redirectToHome: false
   };
 
-  componentDidMount() {
-    this.fetchRecipes();
-  }
+  //Use the componentDidMount lifecycle method
+  // to execute our API call as soon as the component mounts
+  componentDidMount = () => {
+    this.getAllRecipes();
+  };
 
-  fetchRecipes = async () => {
-    try {
-      const response = await axios.get(`/api/recipes`);
-      this.setState({
-        recipes: response.data
+  //Function to get all Facts from axios via our API
+  getAllRecipes = () => {
+    axios
+      .get(`/api/recipes`)
+      .then(response => {
+        const recipes = response.data;
+        this.setState({ recipes: recipes });
+      })
+      .catch(err => {
+        console.log("You messed up somewhere, Jim. Go back!", err);
       });
-    } catch (err) {
-      console.log(`You made an error, Jess!`, err);
-    }
   };
 
-  // Recipe Handle Change
-  handleRecipeChange = event => {
-    const clonedNewRecipe = { ...this.state.newRecipe };
-    clonedNewRecipe[event.target.name] = event.target.value;
+  //Creates a New Event
+  createRecipe = recipe => {
+    recipe.preventDefault();
+    axios
+      .post("/api/recipes", {
+        recipeImg: this.state.newRecipes.recipeImg,
+        recipeName: this.state.newRecipes.recipeName,
+        cookingTime: this.state.newRecipes.cookingTime,
+        ingredient: this.state.newRecipes.ingredient,
+        recipeDescription: this.state.newRecipes.recipeDescription
+      })
+      .then(response => {
+        const recipeList = [...this.state.recipes];
+        recipeList.push(response.data);
+        this.setState({
+          newRecipes: {
+            recipeName: "",
+            recipeImg: "",
+            ingredient: "",
+            recipeDescription: "",
+            cookingTime: ""
+          },
+          isRecipeFormDisplayed: false,
+          recipes: recipeList,
+          redirectToHome: true
+        });
+      });
+  };
 
-    this.setState({
-      newRecipe: clonedNewRecipe
+  // Deletes an event
+  deleteRecipe = () => {
+    axios
+      .delete(`/api/recipes/${this.props.match.params.id}`)
+      .then(response => {
+        this.setState({ redirectToHome: true });
+      });
+  };
+
+  //Toggles the Edit form
+  displayRecipeForm = () => {
+    this.setState((state, props) => {
+      return {
+        isRecipeFormDisplayed: !state.isRecipeFormDisplayed
+      };
     });
   };
 
-  createRecipe = async event => {
-    event.preventDefault();
-    try {
-      const response = await axios.post(
-        "/api/recipes/",
-        this.state.newRecipe
-      );
-
-      const clonedRecipes = [...this.state.recipes];
-      clonedRecipes.push(response.data);
-      this.setState({
-        recipes: clonedRecipes,
-        newRecipe: {
-          recipeImg: "",
-          ingredient: "",
-          recipeDescription: "",
-          cookingTime: ""
-        }
-      });
-    } catch (err) {
-      console.log(`You have a POST error, Jess!`, err);
-    }
+  //Handles form change recipe value
+  handleFormChange = recipe => {
+    //Preserves Recipe State
+    const cloneNewRecipe = { ...this.state.newRecipes };
+    cloneNewRecipe[recipe.target.name] = recipe.target.value;
+    this.setState({ newRecipes: cloneNewRecipe });
   };
+
   render() {
     return (
       <div>
-        <Navbar />
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
@@ -93,13 +120,17 @@ export default class Recipes extends Component {
                     <img
                       src={recipe.recipeImg}
                       className="card-img-top"
-                      alt={recipe.name}
+                      alt={recipe.recipeName}
                     />
                     <div className="card-body">
                       <h5 className="card-title">
-                        <Link to={`/recipes/${recipe.id}/`}>{recipe.recipeDescription}</Link>
+                        <Link to={`/recipes/${recipe.id}/`}>
+                          {recipe.recipeDescription}
+                        </Link>
                       </h5>
-                      <p className="card-text">Cook Time: {recipe.cookingTime}</p>
+                      <p className="card-text">
+                        Cook Time: {recipe.cookingTime}
+                      </p>
                       <p className="card-text">Calories: {recipe.ingredient}</p>
                       <Link
                         to={`/recipes/${recipe.id}/`}

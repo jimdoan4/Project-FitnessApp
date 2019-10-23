@@ -1,4 +1,4 @@
-const { Recipe } = require('../models/Recipe.js')
+const Recipe = require('../models/Recipe.js')
 
 
 const recipeController = {

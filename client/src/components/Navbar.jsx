@@ -7,16 +7,16 @@ class Navbar extends Component {
       <div className="margin-bottom">
         <ul>
           <li>
-            <a class="active" href="#home">
-              Home
-            </a>
+          <Link to="/">
+                 Home
+                </Link>
           </li>
            <li>
-            <a href="/recipes">Recipe</a>
+           <Link to="/recipes/">
+                  Recipes
+                </Link>
           </li>
-          <li>
-            <a href="">Contact</a>
-          </li> 
+        
         </ul>
       </div>
     );
