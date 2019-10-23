@@ -17,7 +17,7 @@ const Exercise = new Schema({
     difficulty: String,
     instruction: String,
     info: Array,
-    additionalReview: [review]
+    additionalReview: [Review]
 })
 
 
