@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import RecipeForm from "./RecipeForm.jsx";
+import { SingleRecipeContainer } from "./styled-components/SingleRecipeStyles";
 import { Card } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Jumbotron } from "react-bootstrap";
 import { CardGroup } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import { ApparelContainer } from "./styled-components/ApparelListStyles";
+
 export default class Recipes extends Component {
   state = {
     recipes: [],
@@ -68,13 +69,13 @@ export default class Recipes extends Component {
   };
 
   // Deletes a recipe
-  deleteRecipe = () => {
-    axios
-      .delete(`/api/recipes/${this.props.match.params.id}`)
-      .then(res => {
-        this.setState({ redirectToRecipe: true });
-      });
-  };
+  // deleteRecipe = () => {
+  //   axios
+  //     .delete(`/api/recipes/${this.props.match.params.id}`)
+  //     .then(res => {
+  //       this.setState({ redirectToRecipe: true });
+  //     });
+  // };
 
   //Toggles the Edit form
   toggleRecipeForm = () => {
@@ -130,9 +131,9 @@ export default class Recipes extends Component {
                 <div class="media-body text-center" key={recipe._id}>
                   <h3 class="mt-2 display-5">{recipe.recipeName}</h3>
                   <p class="lead">Cook Time: {recipe.cookingTime}</p>
-                  <p class="lead">Description: {recipe.recipeDescription}</p> 
+                  <p class="lead">{recipe.recipeDescription}</p> 
                   <br />
-                  <Link to={`/recipes/${recipe.id}/`} className="start-button">
+                  <Link to={`/recipes/${recipe._id}/`} key={recipe._id} className="start-button">
                     Get Recipe
                   </Link>
                 </div>

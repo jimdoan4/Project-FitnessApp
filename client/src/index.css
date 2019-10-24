@@ -140,12 +140,33 @@ li a:hover {
     padding-bottom: 17px;
 }
 
+.jumbotron-container {
+    max-height: 10rem!important;
+}
 .start-button:hover {
   box-shadow: 1px 3px 12px 0px #b3b3b3;
   color: black;
   background: white;
 }
 
+.sign-up-button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sign-up-button:hover {
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+  color: black;
+  background: white;
+}
 /* Workout Jumbo */
 
 .workout-jumbo {
@@ -209,8 +230,6 @@ li a:hover {
 }
 
 
-/* Flex Wrap for cards */
-
 .card-flex {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -222,9 +241,6 @@ li a:hover {
     margin-top: 3rem !important;
 }
 
-.nav-font {
-    font-size: 1.2rem;
-}
 
 .card-margin-all {
     margin-top: 3rem;

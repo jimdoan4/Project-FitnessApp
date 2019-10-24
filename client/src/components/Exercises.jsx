@@ -86,10 +86,6 @@ export default class Exercises extends Component {
   };
 
   render() {
-    if (this.state.error) {
-      return <div>{this.state.error}</div>;
-    }
-
     return (
       <div>
         <div className="bg-dark text-white workout-margin workout-jumbo">

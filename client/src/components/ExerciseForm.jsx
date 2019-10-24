@@ -1,16 +1,11 @@
 import React, { Component } from "react";
+import { ExerciseContainer } from "./styled-components/ExerciseStyle";
 
 export default function ExerciseForm(props) {
   return (
-    <div style={{backgroundColor:"#e3dfda"}}>
+    <ExerciseContainer>
       <h1
-        className="text-center"
-        style={{
-          color: "black",
-          fontWeight: "bold",
-          fontSize: "2.8vw",
-          padding: "15px"
-        }}
+        className="text-center workout-title"
       >
         CREATE YOUR WORKOUT
       </h1>
@@ -18,8 +13,8 @@ export default function ExerciseForm(props) {
       
       <form onSubmit={props.handleSubmit}>
         <div className="form-group">
-          <label htmlFor="fitnessImg" className="text-white">
-            Fitness URL:
+          <label htmlFor="fitnessImg">
+            IMAGE URL
           </label>
           <input
             className="form-control"
@@ -30,10 +25,10 @@ export default function ExerciseForm(props) {
             onChange={props.handleExerciseChange}
           />
         </div>
-        <div class="form-row">
+        <div className="form-row">
         <div className="form-group col-md-4">
-          <label htmlFor="type" className="text-white">
-            Type:
+          <label htmlFor="type">
+          EXERCISE NAME
           </label>
           <input
             className="form-control"
@@ -45,8 +40,8 @@ export default function ExerciseForm(props) {
           />
         </div>
         <div className="form-group col-md-4">
-          <label htmlFor="equipment" className="text-white">
-            Equipment:
+          <label htmlFor="equipment">
+            EQUIPMENT NEEDED
           </label>
           <input
             className="form-control"
@@ -59,8 +54,8 @@ export default function ExerciseForm(props) {
         </div>
    
         <div className="form-group col-md-4">
-        <label htmlFor="v" className="text-white">
-            Difficulty level:
+        <label htmlFor="difficulty">
+           DIFFICULTY LEVEL
           </label>
           <input
             className="form-control"
@@ -75,8 +70,8 @@ export default function ExerciseForm(props) {
       
         </div>
         <div className="form-group">
-        <label htmlFor="instruction" className="text-white">
-            Instruction:
+        <label htmlFor="instruction">
+            INSTRUCTIONS
           </label>
           <textarea className="form-control"
             type="text"
@@ -87,11 +82,11 @@ export default function ExerciseForm(props) {
    
         </div>
         <div className="text-center form-group">
-        <button className="start-button">
+        <button className="exercise-submit-button">
           {props.submitBtnText}
         </button>
         </div>
       </form>
-    </div>
+    </ExerciseContainer>
   );
 }

@@ -1,24 +1,19 @@
 import React, { Component } from 'react'
+import { RecipeContainer } from "./styled-components/RecipeStyles";
 
 export default function RecipeForm(props) {
 
     return (
    
-                <div style={{backgroundColor:"#e3dfda"}}>
+                <RecipeContainer>
       <h1
-        className="text-center"
-        style={{
-          color: "black",
-          fontWeight: "bold",
-          fontSize: "2.8vw",
-          padding: "15px"
-        }}
+        className="text-center recipe-title"
       >
         CREATE YOUR RECIPE
       </h1>
             <form onSubmit={props.handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="recipeName" className="text-white">Name:</label>
+                    <label htmlFor="recipeName">RECIPE NAME</label>
                     <input className="form-control"
                         type="text"
                         id="recipeName"
@@ -28,7 +23,7 @@ export default function RecipeForm(props) {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="recipeImg" className="text-white">Image URL:</label>
+                    <label htmlFor="recipeImg">IMAGE URL</label>
                     <input className="form-control"
                         type="text"
                         id="recipeImg"
@@ -38,7 +33,7 @@ export default function RecipeForm(props) {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="ingredient" className="text-white">Ingredient:</label>
+                    <label htmlFor="ingredient">INGREDIENTS</label>
                     <input className="form-control"
                         type="text"
                         id="ingredient"
@@ -48,7 +43,7 @@ export default function RecipeForm(props) {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="prep_time" className="text-white">Prep Time:</label>
+                    <label htmlFor="prep_time">PREP TIME</label>
                     <input className="form-control"
                         type="text"
                         id="cookingTime"
@@ -58,7 +53,7 @@ export default function RecipeForm(props) {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="recipeDescription" className="text-white">Description:</label>
+                    <label htmlFor="recipeDescription">DESCRIPTION</label>
                     <textarea className="form-control"
                         type="text"
                         id="recipeDescription"
@@ -68,9 +63,9 @@ export default function RecipeForm(props) {
                     />
                 </div>
                 <div className="form-group text-center">
-                    <button className="start-button">SUBMIT</button>
+                    <button className="recipe-submit-button">SUBMIT</button>
                 </div>
             </form>
-        </div>
+        </RecipeContainer>
     )
 }

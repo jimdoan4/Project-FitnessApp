@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import { Link } from "react-router-dom";
 
 export default class Shop extends Component {
   render() {
@@ -10,7 +9,7 @@ export default class Shop extends Component {
           <img
             className="card-img"
             src="https://media.gq.com/photos/5a011017196d3f6684ae0747/master/pass/collections-fitness.png"
-            alt="Workout"
+            alt="Shop"
           />
           <div className="card-img-overlay text-center">
             <h1
