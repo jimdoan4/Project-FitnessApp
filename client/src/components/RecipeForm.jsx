@@ -3,8 +3,19 @@ import React, { Component } from 'react'
 export default function RecipeForm(props) {
 
     return (
-        <div>
-            <h1 className="text-white"></h1>
+   
+                <div style={{backgroundColor:"#e3dfda"}}>
+      <h1
+        className="text-center"
+        style={{
+          color: "black",
+          fontWeight: "bold",
+          fontSize: "2.8vw",
+          padding: "15px"
+        }}
+      >
+        CREATE YOUR RECIPE
+      </h1>
             <form onSubmit={props.handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="recipeName" className="text-white">Name:</label>
@@ -47,17 +58,17 @@ export default function RecipeForm(props) {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="recipeDirection" className="text-white">Directions:</label>
+                    <label htmlFor="recipeDescription" className="text-white">Description:</label>
                     <textarea className="form-control"
                         type="text"
-                        id="recipeDirection"
-                        name="recipeDirection"
-                        value={props.recipeDirection}
+                        id="recipeDescription"
+                        name="recipeDescription"
+                        value={props.recipeDescription}
                         onChange={props.handleRecipeChange}
                     />
                 </div>
-                <div className="form-group">
-                    <button className="btn btn-primary btn-block">Submit</button>
+                <div className="form-group text-center">
+                    <button className="start-button">SUBMIT</button>
                 </div>
             </form>
         </div>

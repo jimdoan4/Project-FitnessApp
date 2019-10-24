@@ -9,16 +9,16 @@ export default class Shop extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/09/23/11/Breathing-yoga-shutterstock.jpg"
+            src="https://media.gq.com/photos/5a011017196d3f6684ae0747/master/pass/collections-fitness.png"
             alt="Workout"
           />
           <div className="card-img-overlay text-center">
             <h1
               className="display-5 centered workout-all-margin"
               style={{
-                backgroundColor: "black",
+               color:"white",
                 fontWeight: "bold",
-                fontSize: "3vw",
+                fontSize: "3.5vw",
                 padding: "15px"
               }}
             >

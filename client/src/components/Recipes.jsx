@@ -71,8 +71,8 @@ export default class Recipes extends Component {
   deleteRecipe = () => {
     axios
       .delete(`/api/recipes/${this.props.match.params.id}`)
-      .then(response => {
-        this.setState({ redirectToHome: true });
+      .then(res => {
+        this.setState({ redirectToRecipe: true });
       });
   };
 
@@ -86,7 +86,7 @@ export default class Recipes extends Component {
   };
 
   //Handles form change recipe value
-  handleChange = e => {
+  handleRecipeChange = e => {
     //Preserves Recipe State
     const cloneNewRecipe = { ...this.state.newRecipe };
     cloneNewRecipe[e.target.name] = e.target.value;
@@ -103,11 +103,16 @@ export default class Recipes extends Component {
             alt="Workout"
           />
           <div className="card-img-overlay">
-            <h1
-              className="display-3 centered workout-all-margin"
-              style={{ fontWeight: "bold", fontSize: "7.7vw" }}
+          <h1
+              className="display-5 centered workout-all-margin"
+              style={{
+               color:"white",
+                fontWeight: "bold",
+                fontSize: "5vw",
+                padding: "15px"
+              }}
             >
-              RECIPES
+              CHECK OUT OUR RECIPES
             </h1>
           </div>
         </div>
@@ -115,7 +120,7 @@ export default class Recipes extends Component {
         <div className="container">
           {this.state.recipes.map(recipe => {
             return (
-              <div class="media col jumbotron" style={{ backgroundColor:"white" }}>
+              <div class="media jumbotron" style={{ backgroundColor:"white" }}>
                 <img
                   src={recipe.recipeImg}
                   class="align-self-start mr-3"
@@ -124,8 +129,8 @@ export default class Recipes extends Component {
                 />
                 <div class="media-body text-center" key={recipe._id}>
                   <h3 class="mt-2 display-5">{recipe.recipeName}</h3>
-                  <p class="leads">Cook Time: {recipe.cookingTime}</p>
-                  <p class="leads">Description: {recipe.recipeDescription}</p> 
+                  <p class="lead">Cook Time: {recipe.cookingTime}</p>
+                  <p class="lead">Description: {recipe.recipeDescription}</p> 
                   <br />
                   <Link to={`/recipes/${recipe.id}/`} className="start-button">
                     Get Recipe
@@ -135,14 +140,14 @@ export default class Recipes extends Component {
             );
           })}
         </div>
-        <h1 className="card-margin-all">Create Recipe</h1>
-        <div className="jumbotron jumbotron-fluid recipe-jumbotron">
+
+        <div className="jumbotron jumbotron-fluid recipe-jumbotron" style={{backgroundColor:"#e3dfda"}}>
           <div className="container">
             <RecipeForm
               recipe={this.state.newRecipe}
               handleSubmit={this.createRecipe}
-              handleRecipeChange={this.handleChange}
-              submitBtnText="Create"
+              handleRecipeChange={this.handleRecipeChange}
+              submitBtnText="SUBMIT"
             />
           </div>
         </div>

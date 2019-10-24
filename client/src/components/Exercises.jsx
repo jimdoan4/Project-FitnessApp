@@ -64,7 +64,7 @@ export default class Exercises extends Component {
   // Deletes an exercise
   deleteExercise = () => {
     axios.delete(`/api/exercises/${this.props.match.params.id}`).then(res => {
-      this.setState({ redirectToHome: true });
+      this.setState({ redirectToExercise: true });
     });
   };
 
@@ -78,7 +78,7 @@ export default class Exercises extends Component {
   };
 
   //Handles form change exercise value
-  handleChange = e => {
+  handleExerciseChange = e => {
     //Preserves exercise State
     const cloneNewExercise = { ...this.state.newExercise };
     cloneNewExercise[e.target.name] = e.target.value;
@@ -95,16 +95,27 @@ export default class Exercises extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://www.socialmediamarketingwi.com/wp-content/uploads/2019/08/57.jpg"
+            src="https://media1.popsugar-assets.com/files/thumbor/qXuXqZVe_owQHwjPh7K_g4AYBX8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/04/12/852/n/1922729/tmp_3bt1XK_9be64c1ae32a73e1_01_WaterRower-00222.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay">
-          <h1 className="display-3 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "7.7vw"}}>
-              WORKOUTS
+            <h1
+              className="display-5 centered workout-all-margin"
+              style={{
+                color: "white",
+                fontWeight: "bold",
+                fontSize: "4vw",
+                padding: "15px"
+              }}
+            >
+              GET YOUR WORKOUT IN
             </h1>
           </div>
         </div>
-        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "#c7c6c5"}}>
+        <div
+          class="jumbotron jumbotron-fluid"
+          style={{ backgroundColor: "white" }}
+        >
           <div class="container text-center">
             <h1 class="display-5">PERSONAL TRAINING AT ATLANTA CYCLE GYM</h1>
             <p class="lead">
@@ -114,15 +125,6 @@ export default class Exercises extends Component {
             <button className="start-button">GET STARTED TODAY</button>
           </div>
         </div>
-        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "white", marginTop:"-30px"}}>
-          <div class="container text-center">
-            <h1 class="display-5">MAKE THE IMPOSSIBLE HAPPEN</h1>
-            <p class="lead">
-            Together, you and your dedicated personal trainer break records, tear down walls, and unlock the extraordinary. At every step, you’re driven by passionate trainers backed by the latest science and our industry-leading institute. Our program. Your results.
-            </p>
-          </div>
-        </div>
-        <br />
 
         <div className="card-flex">
           {this.state.exercises.map(exercise => {
@@ -130,7 +132,7 @@ export default class Exercises extends Component {
               <div key={exercise._id} className="card-flex">
                 <div
                   className="card bg-dark text-white"
-                  style={{ maxWidth: "530px", marginTop:"30px" }}
+                  style={{ maxWidth: "530px", marginTop: "30px" }}
                 >
                   <img
                     className="card-img"
@@ -152,14 +154,16 @@ export default class Exercises extends Component {
             );
           })}
         </div>
-        <h1>Create Workout</h1>
-        <div className="jumbotron jumbotron-fluid recipe-jumbotron">
+        <div
+          className="jumbotron jumbotron-fluid recipe-jumbotron"
+          style={{ backgroundColor: "#e3dfda" }}
+        >
           <div className="container">
             <ExerciseForm
               exercise={this.state.newExercise}
-              handleChange={this.handleChange}
+              handleChange={this.handleExerciseChange}
               handleSubmit={this.createExercise}
-              submitBtnText="Create"
+              submitBtnText="SUBMIT"
             />
           </div>
         </div>

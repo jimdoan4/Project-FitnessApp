@@ -8,13 +8,13 @@ export default class Benefits extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://s7d2.scene7.com/is/image/dksfed/fitnessdeals_spot1"
+            src="https://media2.s-nbcnews.com/i/newscms/2018_23/1343962/orangetheory-today-180605-tease_829d05efed33c035869f3ade23fe1ce8.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay text-center">
-            <h1 className="display-3 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "5.9vw"}}>
+            <h2 className="display-5 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "5.5vw"}}>
               Membership With Benefits
-            </h1>
+            </h2>
           </div>
         </div>
         <div class="jumbotron jumbotron-fluid">
