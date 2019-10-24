@@ -95,7 +95,7 @@ export default class Exercises extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://images7.alphacoders.com/708/708636.jpg"
+            src="https://www.socialmediamarketingwi.com/wp-content/uploads/2019/08/57.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay">
@@ -106,7 +106,7 @@ export default class Exercises extends Component {
         </div>
         <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "#c7c6c5"}}>
           <div class="container text-center">
-            <h1 class="display-5">PERSONAL TRAINING AT EQUINOX</h1>
+            <h1 class="display-5">PERSONAL TRAINING AT ATLANTA CYCLE GYM</h1>
             <p class="lead">
               You can, and you will. With the right personal trainer, you’re
               partners in the impossible.
@@ -120,7 +120,6 @@ export default class Exercises extends Component {
             <p class="lead">
             Together, you and your dedicated personal trainer break records, tear down walls, and unlock the extraordinary. At every step, you’re driven by passionate trainers backed by the latest science and our industry-leading institute. Our program. Your results.
             </p>
-            <button className="start-button">GET STARTED TODAY</button>
           </div>
         </div>
         <br />
@@ -130,8 +129,8 @@ export default class Exercises extends Component {
             return (
               <div key={exercise._id} className="card-flex">
                 <div
-                  className="card bg-dark text-white audio-card-margin"
-                  style={{ maxWidth: "650px" }}
+                  className="card bg-dark text-white"
+                  style={{ maxWidth: "530px", marginTop:"30px" }}
                 >
                   <img
                     className="card-img"

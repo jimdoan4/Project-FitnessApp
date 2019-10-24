@@ -96,64 +96,40 @@ export default class Recipes extends Component {
   render() {
     return (
       <div>
-        <div className="bg-dark text-white workout-margin workout-jumbo">
+        <div className="bg-dark text-white workout-margin workout-jumbo" style={{ marginBottom:"30px" }}>
           <img
             className="card-img"
             src="https://www.rd.com/wp-content/uploads/2018/04/50-Fitness-Myths-that-can-Seriously-Damage-Your-Health-15-760x506.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay">
-            <h1 className="display-3 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "7.7vw"}}>RECIPES</h1>
+            <h1
+              className="display-3 centered workout-all-margin"
+              style={{ fontWeight: "bold", fontSize: "7.7vw" }}
+            >
+              RECIPES
+            </h1>
           </div>
         </div>
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container text-center">
-            <h1 class="display-5">PERSONAL TRAINING AT EQUINOX</h1>
-            <p class="lead">
-              You can, and you will. With the right personal trainer, you’re
-              partners in the impossible.
-            </p>
-            <button className="start-button">GET STARTED TODAY</button>
-          </div>
-        </div>
-        <div className="card-flex">
+
+        <div className="container">
           {this.state.recipes.map(recipe => {
             return (
-              <div
-                className="flex-container card-flex"
-                style={{ marginTop: "1rem", marginLeft: "2rem;" }}
-              >
-                <div
-                  key={recipe._id}
-                  className="flex-container card-flex card-margin-all"
-                >
-                  <div className="card" style={{ width: "600px" }}>
-                    <img
-                      src={recipe.recipeImg}
-                      className="card-img-top"
-                      alt={recipe.recipeName}
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title">
-                        <Link to={`/recipes/${recipe.id}/`}>
-                          {recipe.recipeName}
-                        </Link>
-                      </h5>
-                      <p className="card-text">
-                        Cook Time: {recipe.cookingTime}
-                      </p>
-                      <p className="card-text">Calories: {recipe.ingredient}</p>
-                      <p className="card-text">
-                        Description: {recipe.recipeDescription}
-                      </p>
-                      <Link
-                        to={`/recipes/${recipe.id}/`}
-                        className="btn btn-primary"
-                      >
-                        Get Recipe
-                      </Link>
-                    </div>
-                  </div>
+              <div class="media col jumbotron" style={{ backgroundColor:"white" }}>
+                <img
+                  src={recipe.recipeImg}
+                  class="align-self-start mr-3"
+                  alt={recipe.recipeName}
+                  style={{ width: "23rem", height: "17rem" }}
+                />
+                <div class="media-body text-center" key={recipe._id}>
+                  <h3 class="mt-2 display-5">{recipe.recipeName}</h3>
+                  <p class="leads">Cook Time: {recipe.cookingTime}</p>
+                  <p class="leads">Description: {recipe.recipeDescription}</p> 
+                  <br />
+                  <Link to={`/recipes/${recipe.id}/`} className="start-button">
+                    Get Recipe
+                  </Link>
                 </div>
               </div>
             );

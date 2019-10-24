@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 
-
 export default class Shop extends Component {
   render() {
     return (
@@ -10,39 +9,91 @@ export default class Shop extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://s1.1zoom.me/b5050/53/Fitness_Dumbbells_Hands_White_background_Beautiful_562300_3840x2400.jpg"
+            src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/09/23/11/Breathing-yoga-shutterstock.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay text-center">
-            <h1 className="display-4 centered workout-all-margin" style={{backgroundColor: "black", fontWeight:"bold", fontSize: "5.5vw"}}>
-              THE SHOP AT SOUL CYCLE FITNESS
+            <h1
+              className="display-5 centered workout-all-margin"
+              style={{
+                backgroundColor: "black",
+                fontWeight: "bold",
+                fontSize: "3vw",
+                padding: "15px"
+              }}
+            >
+              THE SHOP AT ATLANTA CYCLE GYM
             </h1>
           </div>
         </div>
-        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "white"}}>
-          <div class="container text-center">
-            <h1 class="display-5">PERSONAL TRAINING AT EQUINOX</h1>
-            <p class="lead">
-              You can, and you will. With the right personal trainer, you’re
-              partners in the impossible.
-            </p>
-            <button className="start-button">GET STARTED TODAY</button>
-          </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "black", color: "white", marginTop:"-30px"}}>
-          <div class="container text-center">
-            <h1 class="display-5">MAKE THE IMPOSSIBLE HAPPEN</h1>
-            <p class="lead">
-            Together, you and your dedicated personal trainer break records, tear down walls, and unlock the extraordinary. At every step, you’re driven by passionate trainers backed by the latest science and our industry-leading institute. Our program. Your results.
-            </p>
-          </div>
-        </div>
-        <br />
 
-       
-     
+        <br />
+        <br />
+        <div class="media container">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1894/2897/products/New-Brand-clothing-Gyms-Tight-t-shirt-mens-fitness-t-shirt-homme-Golds-t-shirt-men_d7467637-c250-404e-b550-22f3676f6604_800x.jpg?v=1528953700"
+            class="align-self-start mr-3 card"
+            alt="..."
+            style={{
+              width: "34rem",
+              height: "32rem",
+              border: "white 1px solid"
+            }}
+          />
+          <div class="media-body text-center">
+            <h2 class="mt-5 display-5">NEW AT THE SHOP</h2>
+            <p class="lead">
+              Introducing the first Equinox Performance Wear line. Get it at The
+              Shop now.
+            </p>
+            <br />
+            <button className="start-button">
+              CHECK OUT OUR NEWEST FASHION TODAY
+            </button>
+          </div>
         </div>
-   
+
+        <div class="media container" style={{ marginTop: "50px" }}>
+          <div class="media-body text-center">
+            <h2 class="mt-5 display-5">ATLANTA CYCLE PERFORMANCE WEAR</h2>
+            <p class="lead">
+              We’ve taken our obsession for fitness and channeled it into
+              creating the perfect collection of activewear.
+            </p>
+          </div>
+          <img
+            src="https://d1ic4altzx8ueg.cloudfront.net/finder-us/wp-uploads/2018/04/USFSD-TopMensWorkoutClothing-Target.jpg"
+            class="ml-3 card"
+            alt="..."
+            style={{
+              width: "34rem",
+              height: "32rem",
+              border: "white 1px solid"
+            }}
+          />
+        </div>
+
+        <div class="media container" style={{ marginTop: "50px" }}>
+          <img
+            src="http://momsdailybrief.com/wp-content/uploads/2019/05/jen-goal-crushers-challenge-promo-1000-1.jpg"
+            class="align-self-start mr-3 card"
+            alt="..."
+            style={{
+              width: "34rem",
+              height: "32rem",
+              border: "white 1px solid"
+            }}
+          />
+          <div class="media-body text-center">
+            <h2 class="mt-5 display-5">PERFORMANCE WEAR NO ONE CAN MATCH</h2>
+            <p class="lead">
+              Introducing the first Equinox Performance Wear line. With every
+              detail from waistbands to hems created for Atlanta Cycle Gym
+              high-performers, we dare you not to be obsessed.
+            </p>
+          </div>
+        </div>
+      </div>
     );
   }
 }
