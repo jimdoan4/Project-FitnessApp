@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
 import { SingleRecipeContainer } from "./styled-components/SingleRecipeStyles";
 
 class SingleRecipe extends Component {
-      // We'll set up the  array as an empty array to begin with
+  // We'll set up the  array as an empty array to begin with
   state = {
     recipeId: this.props.recipeId,
     recipes: [],
@@ -19,14 +19,14 @@ class SingleRecipe extends Component {
       ingredient: "",
       recipeDescription: "",
       cookingTime: ""
-    
     },
     redirectToSingleRecipe: false,
     displayEditForm: false
   };
 
   getRecipeData = () => {
-    axios.get(`/api/recipes/${this.state.recipeId}`).then(res => { // When the page loads, grab apparel id from the database
+    axios.get(`/api/recipes/${this.state.recipeId}`).then(res => {
+      // When the page loads, grab recipe id from the database
       this.setState({ recipe: res.data });
     });
   };
@@ -35,7 +35,8 @@ class SingleRecipe extends Component {
     this.getRecipeData();
   };
 
-  toggleEditForm = () => {  // This toggle the apparel button when clicked
+  toggleEditForm = () => {
+    // This toggle the edit button when clicked
     this.setState((state, props) => {
       return { displayEditForm: !state.displayEditForm };
     });
@@ -50,7 +51,8 @@ class SingleRecipe extends Component {
   updateRecipe = e => {
     e.preventDefault();
     axios
-      .put(`/api/recipes/${this.state.recipeId}`, {   // ask the server to update the apparel in the database
+      .put(`/api/recipes/${this.state.recipeId}`, {
+        // ask the server to update the recipe in the database
         recipeImg: this.state.recipe.recipeImg,
         recipeName: this.state.recipe.recipeName,
         cookingTime: this.state.recipe.cookingTime,
@@ -64,7 +66,8 @@ class SingleRecipe extends Component {
   };
 
   deleteRecipe = () => {
-    axios.delete(`/api/recipes/${this.state.recipeId}`).then(res => { // Ask the server to delete this apparel
+    axios.delete(`/api/recipes/${this.state.recipeId}`).then(res => {
+      // Ask the server to delete this recipe
       this.setState({ redirectToSingleRecipe: true });
     });
   };
@@ -76,57 +79,55 @@ class SingleRecipe extends Component {
     return (
       <SingleRecipeContainer>
         <div className="container">
-            <Card>
+          <Card>
             <Card.Title className="recipe-main-title">
-                  {this.state.recipe.recipeName}
-                </Card.Title>
-              <Card.Img
-                variant="top"
-                src={this.state.recipe.recipeImg}
-                alt="top"
-                className="recipe-img"
-              />
-              <Card.Body>
-                <Card.Title className="product-title">
-                  {this.state.recipe.cookingTime}
-                </Card.Title>
-                <Card.Title className="product-title">
-                  {this.state.recipe.ingredient}
-                </Card.Title>
-                <Card.Title className="product-title">
+              {this.state.recipe.recipeName}
+            </Card.Title>
+            <Card.Img
+              variant="top"
+              src={this.state.recipe.recipeImg}
+              alt="top"
+              className="recipe-img"
+            />
+            <Card.Body>
+              <Card.Title className="recipe-title">
+                {this.state.recipe.cookingTime}
+              </Card.Title>
+              <Card.Title className="recipe-title">
+                {this.state.recipe.ingredient}
+              </Card.Title>
+              <Card.Title className="recipe-title">
                 {this.state.recipe.recipeDescription}
-                </Card.Title>
-              </Card.Body>
+              </Card.Title>
+            </Card.Body>
 
-
-              <Container
-                style={{
-                  textAlign: "center",
-                  marginBottom: "30px",
-                  marginTop: "8px"
-                }}
+            <Container
+              style={{
+                textAlign: "center",
+                marginBottom: "30px",
+                marginTop: "8px"
+              }}
+            >
+              <Button
+                className="edit-recipe-button"
+                onClick={this.toggleEditForm}
               >
-                <Button
-                  className="edit-apparel-button"
-                  onClick={this.toggleEditForm}
-                >
-                  Edit Recipe
-                </Button>
+                EDIT
+              </Button>
 
-                <Button
-                  className="delete-apparel-button"
-                  onClick={this.deleteRecipe}
-                >
-                  Delete 
-                </Button>
-              </Container>
-            </Card>
-       
+              <Button
+                className="delete-recipe-button"
+                onClick={this.deleteRecipe}
+              >
+                DELETE
+              </Button>
+            </Container>
+          </Card>
         </div>
         {this.state.displayEditForm ? (
           <Form className="jumbotron" onSubmit={this.updateRecipe}>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Product Name</Form.Label>
+              <Form.Label>RECIPE NAME</Form.Label>
               <Form.Control
                 type="text"
                 className="text-center"
@@ -138,7 +139,7 @@ class SingleRecipe extends Component {
               />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Size</Form.Label>
+              <Form.Label>IMAGE URL</Form.Label>
               <Form.Control
                 type="text"
                 className="text-center"
@@ -150,7 +151,7 @@ class SingleRecipe extends Component {
               />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Image</Form.Label>
+              <Form.Label>PREP TIME</Form.Label>
               <Form.Control
                 type="text"
                 className="text-center"
@@ -163,7 +164,7 @@ class SingleRecipe extends Component {
             </Form.Group>
 
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Price</Form.Label>
+              <Form.Label>INGREDIENTS</Form.Label>
               <Form.Control
                 type="text"
                 className="text-center"
@@ -176,7 +177,7 @@ class SingleRecipe extends Component {
             </Form.Group>
 
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label>Product Description</Form.Label>
+              <Form.Label>DESCRIPTION</Form.Label>
               <Form.Control
                 as="textarea"
                 type="text"
@@ -188,11 +189,8 @@ class SingleRecipe extends Component {
                 value={this.state.recipe.recipeDescription}
               />
             </Form.Group>
-            <div
-              className="text-center"
-              style={{ marginTop: "20px" }}
-            >
-              <Button className="text-center submit-button">Submit</Button>
+            <div className="text-center" style={{ marginTop: "20px" }}>
+              <Button className="text-center submit-button">SUBMIT</Button>
             </div>
           </Form>
         ) : null}

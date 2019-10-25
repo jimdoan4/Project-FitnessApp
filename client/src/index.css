@@ -127,7 +127,7 @@ li a:hover {
     max-height: 530px;
 }
 
-.start-button {
+.log-in-button {
     background-color: black;
     color: white;
     border: 1px solid black;
@@ -140,14 +140,61 @@ li a:hover {
     padding-bottom: 17px;
 }
 
+.log-in-button:hover {
+    box-shadow: 1px 3px 12px 0px #e88000;
+    color: white;
+    background: #e88000;
+    border: 1px solid #e88000;
+    text-decoration: none;
+  }
+
+  .start-button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    justify-content: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 16.5px;
+}
+
+.start-button:hover {
+    box-shadow: 1px 3px 12px 0px #e88000;
+    color: white;
+    background: #e88000;
+    border: 1px solid #e88000;
+    text-decoration: none;
+  }
+  .recipe-button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 13px;
+}
+
+.recipe-button:hover {
+    box-shadow: 1px 3px 12px 0px #e88000;
+    color: white;
+    background: #e88000;
+    border: 1px solid #e88000;
+    text-decoration: none;
+  }
+
 .jumbotron-container {
     max-height: 10rem!important;
 }
-.start-button:hover {
-  box-shadow: 1px 3px 12px 0px #b3b3b3;
-  color: black;
-  background: white;
-}
+
 
 .sign-up-button {
     background-color: black;
@@ -198,8 +245,6 @@ li a:hover {
     margin-top: 10rem;
 }
 
-
-/* Recipe Form Marin */
 
 .recipe-form-margin {
     margin-bottom: 2rem;

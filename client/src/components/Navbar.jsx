@@ -16,10 +16,6 @@ class Navbar extends Component {
             <Link to="/recipes/">RECIPES</Link>
           </li>
           <li>
-            <Link to="/shop/">SHOP</Link>
-          </li>
-
-          <li>
             <Link to="/members/">MEMBER BENEFITS</Link>
           </li>
         </ul>

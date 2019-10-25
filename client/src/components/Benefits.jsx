@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 export default class Benefits extends Component {
   render() {
@@ -13,7 +12,7 @@ export default class Benefits extends Component {
           />
           <div className="card-img-overlay text-center">
             <h3 className="display-5 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "4.3vw"}}>
-              Membership With Benefits
+              Membership Benefits
             </h3>
           </div>
         </div>

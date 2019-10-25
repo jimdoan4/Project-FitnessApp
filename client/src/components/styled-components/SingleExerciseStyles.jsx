@@ -1,23 +1,23 @@
 import styled from 'styled-components'
 
-export const SingleRecipeContainer=styled.div ` 
+export const SingleExerciseContainer=styled.div ` 
     font-family: "Lato", sans-serif !important;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 
-.recipe-title {
+.exercise-title {
     font-size: 15px;
 }
 
-.recipe-main-title {
+.exercise-main-title {
     font-size: 40px;
     margin-top: 30px;
     font-weight: bold;
 }
 
-.recipe-img {
+.exercise-img {
 
    display: block;
   margin-left: auto;
@@ -27,7 +27,7 @@ export const SingleRecipeContainer=styled.div `
 
 }
 
-.edit-recipe-button {
+.edit-exercise-button {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -36,13 +36,13 @@ export const SingleRecipeContainer=styled.div `
     margin-bottom: 13px;
 }
 
-.edit-recipe-button:hover {
+.edit-exercise-button:hover {
     box-shadow: 1px 3px 12px 0px #b3b3b3;
     color: white;
     background: black;
 }
 
-.delete-recipe-button {
+.delete-exercise-button {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -50,7 +50,7 @@ export const SingleRecipeContainer=styled.div `
     margin-bottom: 13px;
 }
 
-.delete-recipe-button:hover {
+.delete-exercise-button:hover {
     box-shadow: 1px 3px 12px 0px #b3b3b3;
     color: white;
     background: black;

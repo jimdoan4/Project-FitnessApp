@@ -68,14 +68,6 @@ export default class Recipes extends Component {
       });
   };
 
-  // Deletes a recipe
-  // deleteRecipe = () => {
-  //   axios
-  //     .delete(`/api/recipes/${this.props.match.params.id}`)
-  //     .then(res => {
-  //       this.setState({ redirectToRecipe: true });
-  //     });
-  // };
 
   //Toggles the Edit form
   toggleRecipeForm = () => {
@@ -87,7 +79,7 @@ export default class Recipes extends Component {
   };
 
   //Handles form change recipe value
-  handleRecipeChange = e => {
+  handleChange = e => {
     //Preserves Recipe State
     const cloneNewRecipe = { ...this.state.newRecipe };
     cloneNewRecipe[e.target.name] = e.target.value;
@@ -133,8 +125,8 @@ export default class Recipes extends Component {
                   <p class="lead">Cook Time: {recipe.cookingTime}</p>
                   <p class="lead">{recipe.recipeDescription}</p> 
                   <br />
-                  <Link to={`/recipes/${recipe._id}/`} key={recipe._id} className="start-button">
-                    Get Recipe
+                  <Link to={`/recipes/${recipe._id}/`} key={recipe._id} className="recipe-button">
+                    GET THE RECIPE
                   </Link>
                 </div>
               </div>
@@ -147,7 +139,7 @@ export default class Recipes extends Component {
             <RecipeForm
               recipe={this.state.newRecipe}
               handleSubmit={this.createRecipe}
-              handleRecipeChange={this.handleRecipeChange}
+              handleChange={this.handleRecipeChange}
               submitBtnText="SUBMIT"
             />
           </div>

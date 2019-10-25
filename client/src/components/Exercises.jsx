@@ -23,7 +23,7 @@ export default class Exercises extends Component {
     this.getAllExercises();
   };
 
-  //Function to get all Facts from axios via our API
+  //Function to get all Exercises from axios via our API
   getAllExercises = () => {
     axios.get(`/api/exercises/`).then(res => {
       this.setState({ exercises: res.data });
@@ -61,12 +61,6 @@ export default class Exercises extends Component {
       });
   };
 
-  // Deletes an exercise
-  deleteExercise = () => {
-    axios.delete(`/api/exercises/${this.props.match.params.id}`).then(res => {
-      this.setState({ redirectToExercise: true });
-    });
-  };
 
   //Toggles the Edit form
   toggleExerciseForm = () => {
@@ -78,7 +72,7 @@ export default class Exercises extends Component {
   };
 
   //Handles form change exercise value
-  handleExerciseChange = e => {
+  handleChange = e => {
     //Preserves exercise State
     const cloneNewExercise = { ...this.state.newExercise };
     cloneNewExercise[e.target.name] = e.target.value;
@@ -91,7 +85,7 @@ export default class Exercises extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://media1.popsugar-assets.com/files/thumbor/qXuXqZVe_owQHwjPh7K_g4AYBX8/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/04/12/852/n/1922729/tmp_3bt1XK_9be64c1ae32a73e1_01_WaterRower-00222.jpg"
+            src="https://www.socialmediamarketingwi.com/wp-content/uploads/2019/08/57.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay">
@@ -113,7 +107,7 @@ export default class Exercises extends Component {
           style={{ backgroundColor: "white" }}
         >
           <div class="container text-center">
-            <h1 class="display-5">PERSONAL TRAINING AT ATLANTA CYCLE GYM</h1>
+            <h3 class="display-5">PERSONAL TRAINING AT ATLANTA CYCLE GYM</h3>
             <p class="lead">
               You can, and you will. With the right personal trainer, you’re
               partners in the impossible.
@@ -138,7 +132,8 @@ export default class Exercises extends Component {
                   <div className="card-img-overlay">
                     <h3 className="card-title centered scale">
                       <Link
-                        to={`/exercises/${exercise.id}/`}
+                        to={`/exercises/${exercise._id}/`}
+                        key={exercise._id} 
                         className="workout-link"
                       >
                         {exercise.type}
