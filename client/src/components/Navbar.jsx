@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { NavContainer } from "./styled-components/NavStyle";
 
 class Navbar extends Component {
   render() {
     return (
+      <NavContainer>
       <div class="topnav" id="myTopnav">
       <div className="text-center">
        <Link to="/">HOME</Link>
@@ -16,6 +18,7 @@ class Navbar extends Component {
     <i class="fa fa-bars"></i>
   </a>
 </div>
+</NavContainer>
     );
   }
 }

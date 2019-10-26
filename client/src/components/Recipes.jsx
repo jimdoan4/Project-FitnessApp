@@ -110,11 +110,12 @@ export default class Recipes extends Component {
         </div>
       
         <RecipeContainer>
+        <div className="card-flex">
           {this.state.recipes.map(recipe => {
             return (
               <div key={recipe._id} className="card-flex">
                 <div
-                  className="card text-white"
+                  className="card card-flex text-white"
                   style={{ maxWidth: "320px", marginBottom: "20px"}}
                 >
                   <img
@@ -143,7 +144,7 @@ export default class Recipes extends Component {
               
             );
           })}
-       
+          </div>
         </RecipeContainer>
         {/* <RecipeContainer className="container-fluid">
           {this.state.recipes.map(recipe => {
