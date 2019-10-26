@@ -34,6 +34,30 @@ color: black;
     color: black;
     background: white;
 }
+/**************************** MEDIA-QUERY-IPHONE X ***************************/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  form {
+    margin-left: -170px;
+margin-right: -170px;
+  }
 
+    .recipe-image {
+    width: 5vw;
+    height: 6vw;
+}
+.recipe-title {
+  
+    font-size: 5vw;
+    margin-left: -170px;
+margin-right: -170px;
+  
+}
+.workout-title {
+    font-size: 5vw;
+    margin-left: -170px;
+margin-right: -170px;
+ 
+}
+}
 
 `

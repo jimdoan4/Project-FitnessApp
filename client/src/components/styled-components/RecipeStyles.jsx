@@ -22,15 +22,15 @@ font-family: "Lato", sans-serif !important;
     transition: box-shadow 1.2s;
 }
 
-.card {
+/* .card {
     margin-left: -70px!important;
     margin-right: -70px!important;
-}
+} */
 
-.recipe-side-margin {
+/* .recipe-side-margin {
     margin-left: 80px!important;
     margin-right: 80px!important;
-}
+} */
 hr {
 width: 100%;
 margin-left: auto;
@@ -112,6 +112,18 @@ border: .8px solid #e6e6e6;
   background: white;
 }
 
+/**************************** MEDIA-QUERY-IPHONE X ***************************/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .recipe-image {
+    width: 5vw;
+    height: 6vw;
+}
+.recipe-title {
+    font-weight: bold;
+    font-size: 7vw!important;
+ 
+}
+}
 
 
 `
