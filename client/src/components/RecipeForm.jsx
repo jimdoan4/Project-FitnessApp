@@ -14,7 +14,7 @@ export default function RecipeForm(props) {
             id="recipeName"
             name="recipeName"
             value={props.recipe.recipeName}
-            onChange={props.handleRecipeChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-group">
@@ -25,7 +25,7 @@ export default function RecipeForm(props) {
             id="recipeImg"
             name="recipeImg"
             value={props.recipe.recipeImg}
-            onChange={props.handleRecipeChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-group">
@@ -36,7 +36,7 @@ export default function RecipeForm(props) {
             id="ingredient"
             name="ingredient"
             value={props.recipe.ingredient}
-            onChange={props.handleRecipeChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-group">
@@ -47,7 +47,7 @@ export default function RecipeForm(props) {
             id="cookingTime"
             name="cookingTime"
             value={props.recipe.cookingTime}
-            onChange={props.handleRecipeChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-group">
@@ -58,7 +58,7 @@ export default function RecipeForm(props) {
             id="recipeDescription"
             name="recipeDescription"
             value={props.recipeDescription}
-            onChange={props.handleRecipeChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-group text-center">

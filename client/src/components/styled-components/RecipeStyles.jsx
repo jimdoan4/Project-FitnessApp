@@ -13,18 +13,23 @@ font-family: "Lato", sans-serif !important;
                 font-size: 5vw;
                 padding: 15px;
 }
-.jumbotron:hover {
+.cards:hover {
     box-shadow: 2px 3px 2px 2px #b3b3b3;
     height: 16vw;
     background-color: white!important;
-    margin-top: -11px;
-    margin-bottom: -11px;
+    /* margin-top: -11px;
+    margin-bottom: -11px; */
     transition: box-shadow 1.2s;
 }
 
+.card {
+    margin-left: -70px!important;
+    margin-right: -70px!important;
+}
+
 .recipe-side-margin {
-    margin-left: 50px!important;
-    margin-right: 50px;
+    margin-left: 80px!important;
+    margin-right: 80px!important;
 }
 hr {
 width: 100%;

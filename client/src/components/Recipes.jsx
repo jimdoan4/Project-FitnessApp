@@ -108,8 +108,44 @@ export default class Recipes extends Component {
             </h1>
           </div>
         </div>
-
-        <RecipeContainer className="container-fluid">
+        <RecipeContainer>
+        <div className="card-flex">
+          {this.state.recipes.map(recipe => {
+            return (
+              <div key={recipe._id} className="card-flex">
+                <div
+                  className="card text-white"
+                  style={{ maxWidth: "320px", marginTop: "30px", marginBottom: "30px"}}
+                >
+                  <img
+                    className="card-img"
+                    src={recipe.recipeImg}
+                    alt={recipe.recipeName}
+                    style={{ maxWidth: "320px", height: "250px", maxHeight:"250px"}}
+                  />
+                  <div className="card-img-overlay">
+                    <h3 className="card-title centered">
+                      <Link
+                        to={`/recipes/${recipe._id}/`}
+                        key={recipe._id} 
+                        className="workout-link"
+                      >
+                        {recipe.recipeName}
+                      </Link>
+                    </h3>
+                  </div>
+                  {/* <div className="card-body" style={{color:"black"}}>
+                  <p>Cook Time: {recipe.cookingTime}</p>
+                  <p>{recipe.recipeDescription}</p> 
+                  </div> */}
+                </div>
+              </div>
+              
+            );
+          })}
+        </div>
+        </RecipeContainer>
+        {/* <RecipeContainer className="container-fluid">
           {this.state.recipes.map(recipe => {
             return (
               <div className="recipe-side-margin">
@@ -135,7 +171,7 @@ export default class Recipes extends Component {
             );
             
           })}
-        </RecipeContainer>
+        </RecipeContainer> */}
        
 
         <div className="jumbotron jumbotron-fluid recipe-jumbotron" style={{backgroundColor:"#e3dfda"}}>
@@ -143,7 +179,7 @@ export default class Recipes extends Component {
             <RecipeForm
               recipe={this.state.newRecipe}
               handleSubmit={this.createRecipe}
-              handleChange={this.handleRecipeChange}
+              handleChange={this.handleChange}
               submitBtnText="SUBMIT"
             />
           </div>
