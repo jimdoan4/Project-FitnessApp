@@ -4,8 +4,8 @@ import styled from 'styled-components'
 export const NavContainer = styled.div`
 .topnav {
     overflow: hidden;
-    background-color: #071e52;
-    height: 5rem;
+    background-color: black;
+    height: 6rem;
     box-shadow: 2px 2px 1px 2px #b3b3b3;
     /* border: .8px solid #b3b3b3; */
 }
@@ -15,7 +15,7 @@ export const NavContainer = styled.div`
     display: block;
     color: white;
     font-weight: bold;
-    padding: 26px 36px;
+    padding: 18px 36px;
     text-decoration: none;
     font-size: 16px;
   }
