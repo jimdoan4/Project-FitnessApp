@@ -3,6 +3,36 @@ body {
   font-family: "Lato", sans-serif !important;
 }
 
+.module {
+    animation: move 2s;
+    -webkit-animation: move 2s;
+  }
+  
+  @keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  
 /*************************** NAVBAR **********************/
 /* 
 @media (min-width: 992px) {
