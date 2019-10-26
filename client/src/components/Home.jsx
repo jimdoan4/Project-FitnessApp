@@ -16,7 +16,7 @@ export default class Home extends Component {
               style={{
                 color: "white",
                 fontWeight: "bold",
-                fontSize: "3.5vw",
+                fontSize: "4vw",
                 padding: "15px"
               }}
             >
@@ -30,7 +30,7 @@ export default class Home extends Component {
         <div class="media container">
           <img
             src="https://cdn.shopify.com/s/files/1/1894/2897/products/New-Brand-clothing-Gyms-Tight-t-shirt-mens-fitness-t-shirt-homme-Golds-t-shirt-men_d7467637-c250-404e-b550-22f3676f6604_800x.jpg?v=1528953700"
-            class="align-self-start mr-3 card"
+            class="align-self-start mr-3 card-img"
             alt="..."
             style={{
               width: "34rem",
@@ -61,12 +61,11 @@ export default class Home extends Component {
           </div>
           <img
             src="https://d1ic4altzx8ueg.cloudfront.net/finder-us/wp-uploads/2018/04/USFSD-TopMensWorkoutClothing-Target.jpg"
-            class="ml-3 card"
+            class="ml-3 card-img"
             alt="..."
             style={{
               width: "34rem",
-              height: "32rem",
-              border: "white 1px solid"
+              height: "32rem"
             }}
           />
         </div>

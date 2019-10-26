@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import RecipeForm from "./RecipeForm.jsx";
-import { SingleRecipeContainer } from "./styled-components/SingleRecipeStyles";
+import { RecipeContainer } from "./styled-components/RecipeStyles";
 import { Card } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Jumbotron } from "react-bootstrap";
@@ -93,46 +93,50 @@ export default class Recipes extends Component {
           <img
             className="card-img"
             src="https://www.rd.com/wp-content/uploads/2018/04/50-Fitness-Myths-that-can-Seriously-Damage-Your-Health-15-760x506.jpg"
-            alt="Workout"
+            alt="Recipe"
           />
           <div className="card-img-overlay">
           <h1
-              className="display-5 centered workout-all-margin"
+              className="display-5 centered workout-all-margin"  
               style={{
-               color:"white",
+                color: "white",
                 fontWeight: "bold",
-                fontSize: "5vw",
+                fontSize: "4vw",
                 padding: "15px"
-              }}
-            >
+              }}>
               CHECK OUT OUR RECIPES
             </h1>
           </div>
         </div>
 
-        <div className="container">
+        <RecipeContainer className="container-fluid">
           {this.state.recipes.map(recipe => {
             return (
-              <div class="media jumbotron" style={{ backgroundColor:"white" }}>
+              <div className="recipe-side-margin">
+              <div class="media jumbotron clear-fix" style={{ backgroundColor:"#f7f7f7" }}>
                 <img
                   src={recipe.recipeImg}
-                  class="align-self-start mr-3"
+                  className="align-self-start mr-3 recipe-image"
                   alt={recipe.recipeName}
-                  style={{ width: "23rem", height: "17rem" }}
                 />
                 <div class="media-body text-center" key={recipe._id}>
-                  <h3 class="mt-2 display-5">{recipe.recipeName}</h3>
-                  <p class="lead">Cook Time: {recipe.cookingTime}</p>
-                  <p class="lead">{recipe.recipeDescription}</p> 
-                  <br />
+                  <h4>{recipe.recipeName}</h4>
+                  <p>Cook Time: {recipe.cookingTime}</p>
+                  <p>{recipe.recipeDescription}</p> 
+                
                   <Link to={`/recipes/${recipe._id}/`} key={recipe._id} className="recipe-button">
                     GET THE RECIPE
                   </Link>
+          
                 </div>
               </div>
+              <hr/>
+              </div>
             );
+            
           })}
-        </div>
+        </RecipeContainer>
+       
 
         <div className="jumbotron jumbotron-fluid recipe-jumbotron" style={{backgroundColor:"#e3dfda"}}>
           <div className="container">

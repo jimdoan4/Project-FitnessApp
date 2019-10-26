@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { RecipeContainer } from "./styled-components/RecipeStyles";
+import { RecipeFormContainer } from "./styled-components/RecipeFormStyle";
 
 export default function RecipeForm(props) {
   return (
-    <RecipeContainer>
+    <RecipeFormContainer>
       <h1 className="text-center recipe-title">CREATE YOUR RECIPE</h1>
       <form onSubmit={props.handleSubmit}>
         <div className="form-group">
@@ -65,6 +65,6 @@ export default function RecipeForm(props) {
           <button className="recipe-submit-button">SUBMIT</button>
         </div>
       </form>
-    </RecipeContainer>
+    </RecipeFormContainer>
   );
 }

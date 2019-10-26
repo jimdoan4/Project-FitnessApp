@@ -11,9 +11,15 @@ export default class Benefits extends Component {
             alt="Membership"
           />
           <div className="card-img-overlay text-center">
-            <h3 className="display-5 centered workout-all-margin" style={{fontWeight:"bold", fontSize: "4.3vw"}}>
-              Membership Benefits
-            </h3>
+            <h1 className="display-5 centered workout-all-margin"  
+            style={{
+                color: "white",
+                fontWeight: "bold",
+                fontSize: "4.7vw",
+                padding: "15px"
+              }}>
+              MEMBERSHIP BENEFITS
+            </h1>
           </div>
         </div>
         <div class="jumbotron jumbotron-fluid">

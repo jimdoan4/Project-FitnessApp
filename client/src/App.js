@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 import Home from './components/Home.jsx'
 import Recipes from './components/Recipes.jsx'
 import RecipePage from './components/RecipePage.jsx'
@@ -25,7 +26,7 @@ class App extends Component {
        
             </Switch>
           </div>
-  
+  <Footer/>
       </Router>
     );
   }
