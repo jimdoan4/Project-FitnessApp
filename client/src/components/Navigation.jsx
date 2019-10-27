@@ -11,8 +11,8 @@ class Navigation extends Component {
   render() {
     return (
        <NavContainer>
-        <Navbar className="nav" expand="lg">
-          <Navbar.Brand className="nav-link" href="/">ATLANTA CYCLE GYM</Navbar.Brand>
+        <Navbar className="nav" expand="lg" fixed="top">
+          {/* <Navbar.Brand className="nav-link" href="/">ATLANTA CYCLE GYM</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto text-center">

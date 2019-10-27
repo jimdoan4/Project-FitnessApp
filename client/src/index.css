@@ -139,7 +139,7 @@ body {
     margin-top: 4.5rem;
 } */
 .card-img {
-    max-height: 530px;
+    max-height: 740px;
 }
 
 .log-in-button {
@@ -211,7 +211,7 @@ body {
   color: black;
   background: white;
 }
-/* Workout Jumbo */
+
 
 .workout-jumbo {
     position: relative;
@@ -314,8 +314,7 @@ body {
     height: 32rem;
     transition: .5s ease;
     backface-visibility: hidden;
-    /* opacity: 1; */
-    /* display: block; */
+
   }
 
   .column-img {
@@ -331,9 +330,6 @@ body {
     height: 42rem;
     transition: .5s ease;
     backface-visibility: hidden;
-    
-    /* opacity: 1; */
-    /* display: block; */
   }
 
   .member-text {
@@ -343,8 +339,7 @@ body {
     height: 32rem;
     transition: .5s ease;
     backface-visibility: hidden;
-    /* opacity: 1; */
-    /* display: block; */
+
   }
 
   .middle {

@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
 .slider {
-margin-right: 76px!important;
-margin-left: 76px!important;
+margin-right: 66px!important;
+margin-left: 66px!important;
 }
- img {
+ /* img {
     margin-right: 20px!important;
-} 
+}  */
 h2{
   text-align:center;
   padding: 20px;
@@ -17,15 +17,17 @@ h2{
 /* Slider */
 
 .slick-slide {
-    margin: 0px 0px;
+    /* margin: 0px 0px;
     display: flex !important;
     flex-wrap: wrap !important;
-    justify-content: space-around !important;
-    
+    justify-content: space-around !important; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; 
 }
 
 .slide img {
-    height: 25vw;
+    height: 26vw;
     width: 21vw!important;
     width: 100%;
 }
@@ -36,12 +38,12 @@ h2{
     backface-visibility: hidden;
   }
 
-.button-centered {
+/* .button-centered {
   position: absolute;
   top: 80%;
   left: 40%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .fitness-button {
     background-color: black;
@@ -64,13 +66,6 @@ h2{
     border: 1px solid #e88000;
     text-decoration: none;
   }
-/* .slick-slide img {
-    /* width: 100%; */
-    
-    /* height: 40vw;
-    width: 20vw; */
-    /* margin-right: 90px!important; */
-/* }  */
 
 .slick-slider
 {
@@ -179,6 +174,62 @@ h2{
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 32rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+  }
+
+
+
+
+
+  .column:hover img {
+    opacity: 0.3;
+  }
+
+
+ 
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+        width: 100%;
+      width: 45rem!important;
+    }
 }
 
 
