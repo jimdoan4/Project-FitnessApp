@@ -7,17 +7,21 @@ export default class Home extends Component {
       <div>
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
-            className="card-img"
-            src="https://media.gq.com/photos/5a011017196d3f6684ae0747/master/pass/collections-fitness.png"
+            className="card-img main-img"
+            src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2019040971870/sweat-trainer-kelsey-wells-fitness-tips-new-mums/0-350-475/Kelsey-Wells-t.jpg"
             alt="Shop"
           />
           <div className="card-img-overlay text-center">
-            <h1 className="display-5 centered main-header workout-all-margin">
-              ATLANTA CYCLE GYM
-            </h1>
+            <h2 className="display-5 centered main-header workout-all-margin">
+              ATL CYCLE GYM
+            </h2>
           </div>
         </div>
-        <div class="jumbotron jumbotron-fluid" style={{backgroundColor: "black", color: "white"}}>
+
+        <div
+          class="jumbotron jumbotron-fluid"
+          style={{ backgroundColor: "white", color: "black" }}
+        >
           <div class="container text-center">
             <h2 class="display-4 sub-header">
               PERSONAL TRAINING AT ATLANTA CYCLE GYM
@@ -31,8 +35,8 @@ export default class Home extends Component {
         </div>
 
         <HomeContainer>
-          <div class="container">
-            <h2 className="sub-header">CHECK OUT OUR WORKOUT TECHNIQUES</h2>
+          <div class="container-fluid">
+            <h2 className="sub-header">FITNESS</h2>
             <section class="customer-logos slider">
               <div class="slide">
                 <img src="https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/1109-feet-elevated-pushup.jpg?itok=urXPS8Lq" />
@@ -63,69 +67,54 @@ export default class Home extends Component {
             </section>
           </div>
         </HomeContainer>
-        <div class="jumbotron media jumbotron-fluid" style={{backgroundColor: "black", color: "white"}}>
-        <div class="media container module">
-          <img
-            src="https://cdn.shopify.com/s/files/1/1894/2897/products/New-Brand-clothing-Gyms-Tight-t-shirt-mens-fitness-t-shirt-homme-Golds-t-shirt-men_d7467637-c250-404e-b550-22f3676f6604_800x.jpg?v=1528953700"
-            class="align-self-start mr-3 card-img"
-            alt="..."
-            style={{
-              width: "44rem",
-              height: "44rem",
-              border: "white 1px solid"
-            }}
-          />
-          <div class="media-body text-center">
-            <h2 class="mt-5 display-5 sub-header">
-              CREATE YOUR OWN WORKOUTS AND RECIPES
-            </h2>
-            <p class="lead">
-              Introducing the first Atlanta Cycle Performance Wear line. Get it
-              at The Shop now.
-            </p>
+
+        <div className="recipe-container">
+          <h2 className="text-center sub-header">RECIPES</h2>
+          <div class="row">
+            <div class="column">
+              <img src="https://cdn.apartmenttherapy.info/image/upload/v1564775676/k/Photo/Recipes/2019-08-how-to-juiciest-turkey-meatballs/How-to-Make-the-Best-Juiciest-Turkey-Meatballs_055.jpg" />
+              <div class="middle">
+                <div class="text">John Doe</div>
+              </div>
+              <h1>TEXT TEXT</h1>
+            </div>
+            <div class="column">
+              <img src="https://ob8qxdtnu3-flywheel.netdna-ssl.com/wp-content/uploads/2019/01/Crispy-Cauliflower-Tacos-036.jpg" />
+              <h1>TEXT TEXT</h1>
+            </div>
+            <div class="column">
+              <img src="https://purewows3.imgix.net/images/articles/2018_01/balsamic-cranberry-roast-chicken.jpg?auto=format,compress&cs=strip" />
+              <h1>TEXT TEXT</h1>
+            </div>
+            <div class="column">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/epic-summer-salad.jpg" />
+              <h1>TEXT TEXT</h1>
+            </div>
           </div>
         </div>
-</div>
-        <div class="media container module">
-          <div class="media-body text-center">
-            <h2 class="mt-5 display-5 sub-header">
-              ATLANTA CYCLE PERFORMANCE WEAR
-            </h2>
-            <p class="lead">
-              We’ve taken our obsession for fitness and channeled it into
-              creating the perfect collection of activewear.
-            </p>
+
+        <div className="member-container">
+          <h2 className="text-center sub-header">MEMBERSHIP</h2>
+          <div class="row module">
+            <div class="column-img">
+              <h2 class="mt-5 display-5 sub-header">
+                ATLANTA CYCLE PERFORMANCE WEAR
+              </h2>
+              <h2 className="member-text">
+                We’ve taken our obsession for fitness and channeled it into
+                creating the perfect collection of activewear.
+              </h2>
+            </div>
+            <div class="column-img">
+              <img
+                className="member-img card-img"
+                src="https://d1ic4altzx8ueg.cloudfront.net/finder-us/wp-uploads/2018/04/USFSD-TopMensWorkoutClothing-Target.jpg"
+              />
+              <div class="middle">
+                <div class="text">John Doe</div>
+              </div>
+            </div>
           </div>
-          <img
-            src="https://d1ic4altzx8ueg.cloudfront.net/finder-us/wp-uploads/2018/04/USFSD-TopMensWorkoutClothing-Target.jpg"
-            class="ml-3 card-img"
-           
-            style={{
-              width: "44rem",
-              height: "44rem"
-            }}
-          />
-        </div>
-        <div class="jumbotron media jumbotron-fluid" style={{backgroundColor: "black", color: "white"}}>
-        <div class="media container module">
-          <img
-            src="http://momsdailybrief.com/wp-content/uploads/2019/05/jen-goal-crushers-challenge-promo-1000-1.jpg"
-            class="align-self-start mr-3 card"
-            alt="..."
-            style={{
-              width: "44rem",
-              height: "44rem",
-              border: "white 1px solid"
-            }}
-          />
-          <div class="media-body text-center">
-            <h2 class="mt-5 display-5 sub-header">MEMBERSHIP WITH BENEFITS</h2>
-            <p class="lead">
-              With every detail from waistbands to hems created for Atlanta
-              Cycle Gym high-performers, we dare you not to be obsessed.
-            </p>
-          </div>
-        </div>
         </div>
       </div>
     );

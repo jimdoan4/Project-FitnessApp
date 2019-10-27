@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
+import Navigation from "./components/Navigation.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from './components/Home.jsx'
 import Recipes from './components/Recipes.jsx'
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar/>
+          <Navigation/>
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/recipes/' component={Recipes} />

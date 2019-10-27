@@ -2,30 +2,39 @@ import styled from 'styled-components'
 
 
 export const HomeContainer = styled.div`
-img {
-    margin-right: 50px!important;
+.slider {
+margin-right: 76px!important;
+margin-left: 76px!important;
 }
+ img {
+    margin-right: 20px!important;
+} 
 h2{
   text-align:center;
   padding: 20px;
 }
+
 /* Slider */
 
 .slick-slide {
-    margin: 0px 20px;
+    margin: 0px 0px;
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: space-around !important;
-    margin-right: 50px!important;
     
 }
 
 .slide img {
-    /* margin-right: 50px!important; */
-    height: 35vw;
-    width: 26vw!important;
+    height: 25vw;
+    width: 21vw!important;
     width: 100%;
 }
+
+.slide:hover img {
+    opacity: 0.3;
+    transition: .8s ease;
+    backface-visibility: hidden;
+  }
 
 .button-centered {
   position: absolute;

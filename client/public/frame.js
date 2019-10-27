@@ -1,8 +1,8 @@
 $(document).ready(function(){
   
   $('.customer-logos').slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       autoplay: true,
       autoplaySpeed: 1500,
       arrows: false,
@@ -11,12 +11,12 @@ $(document).ready(function(){
       responsive: [{
           breakpoint: 768,
           settings: {
-              slidesToShow: 3
+              slidesToShow: 4
           }
       }, {
           breakpoint: 520,
           settings: {
-              slidesToShow: 3
+              slidesToShow: 4
           }
       }]
   });
