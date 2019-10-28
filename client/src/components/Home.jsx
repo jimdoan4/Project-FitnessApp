@@ -134,29 +134,6 @@ export default class Home extends Component {
           </div>
         </div>
 
-        {/* <div className="member-container">
-          <h2 className="text-center sub-header">MEMBERSHIP & SERVICE</h2>
-          <div class="row module">
-            <div class="column-img">
-              <h2 class="mt-5 display-5 sub-header">
-                ATLANTA CYCLE PERFORMANCE WEAR
-              </h2>
-              <h2 className="member-text">
-                We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear.
-              </h2>
-            </div>
-            <div class="column-img">
-              <img
-                className="member-img card-img"
-                src="https://media1.popsugar-assets.com/files/thumbor/gNPMqznk7wYWIs_g8w9QWDeIg-c/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/01/18/748/n/1922729/tmp_g13kI4_210fdc7e610ec25d_GettyImages-891326080.jpg"
-              />
-              <div class="middle">
-                <div class="text">John Doe</div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     );
   }

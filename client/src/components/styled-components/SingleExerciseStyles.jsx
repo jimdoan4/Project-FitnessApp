@@ -22,20 +22,22 @@ export const SingleExerciseContainer=styled.div `
    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  max-height: 29rem;
+  width:55%;
+  max-height: 38rem;
 
 }
 
 .edit-exercise-button {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: .5px solid #e3e3e1;
     margin-right: 10px;
     margin-top: 13px;
     margin-bottom: 13px;
     border-radius: 4px;
     letter-spacing: 4px;
+    padding: 15px 30px 15px 30px;
+    font-size: 1.3rem;
 }
 
 .edit-exercise-button:hover {
@@ -47,11 +49,13 @@ export const SingleExerciseContainer=styled.div `
 .delete-exercise-button {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: .5px solid #e3e3e1;
     margin-top: 13px;
     margin-bottom: 13px;
     border-radius: 4px;
     letter-spacing: 4px;
+    padding: 15px 30px 15px 30px;
+    font-size: 1.3rem;
 }
 
 .delete-exercise-button:hover {
@@ -63,7 +67,7 @@ export const SingleExerciseContainer=styled.div `
 .submit-button {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: .5px solid #e3e3e1;
     justify-content: center;
     padding-left: 60px;
     padding-right: 60px;
@@ -71,6 +75,8 @@ export const SingleExerciseContainer=styled.div `
     margin-bottom: 20px;
     border-radius: 4px;
     letter-spacing: 4px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.3rem;
 }
 
 .submit-button:hover {
@@ -84,6 +90,18 @@ export const SingleExerciseContainer=styled.div `
     font-size: 15px;
 }
 
+.form-exercise {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    border-radius: 5px!important;
+}
+
+
+.jumbotron {
+    margin-top: 30px;
+    background-color: #e3dfda;
+
+}
 .add-form {
     background-color: white;
     border: 1px solid black;

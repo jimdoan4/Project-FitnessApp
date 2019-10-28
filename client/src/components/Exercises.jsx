@@ -147,6 +147,8 @@ export default class Exercises extends Component {
             );
           })}
         </div>
+        <br/>
+        <br/>
         <div
           className="jumbotron jumbotron-fluid recipe-jumbotron"
           style={{ backgroundColor: "#e3dfda" }}

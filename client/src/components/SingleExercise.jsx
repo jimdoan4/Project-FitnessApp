@@ -135,7 +135,7 @@ class SingleExercise extends Component {
               <Form.Label>IMAGE URL</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-exercise"
                 id="fitnessImg"
                 name="fitnessImg"
                 onChange={this.handleChange}
@@ -145,7 +145,7 @@ class SingleExercise extends Component {
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label>NAME OF WORKOUT</Form.Label>
               <Form.Control
-                className="text-center"
+                className="text-center form-exercise"
                 id="type"
                 type="text"
                 name="type"
@@ -158,7 +158,7 @@ class SingleExercise extends Component {
               <Form.Label>DIFFICULTY LEVEL</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-exercise"
                 id="difficulty"
                 name="difficulty"
                 onChange={this.handleChange}
@@ -170,7 +170,7 @@ class SingleExercise extends Component {
               <Form.Label>EQUIPMENT USED</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-exercise"
                 id="equipment"
                 name="equipment"
                 onChange={this.handleChange}
@@ -182,7 +182,7 @@ class SingleExercise extends Component {
               <Form.Control
                 as="textarea"
                 type="text"
-                className="text-center"
+                className="text-center form-exercise"
                 id="instruction"
                 name="instruction"
                 onChange={this.handleChange}

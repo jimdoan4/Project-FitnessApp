@@ -8,11 +8,20 @@ margin-right: 170px;
 color: black;
 }
 
+.form-control {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px!important;
+}
+
+.form-group label {
+    font-size: 13px!important;
+}
 
 .workout-title {
     color: black;
     font-weight: bold;
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     padding: 15px;
 }
 

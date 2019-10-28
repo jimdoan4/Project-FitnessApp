@@ -130,7 +130,7 @@ class SingleRecipe extends Component {
               <Form.Label>RECIPE NAME</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-recipe"
                 id="recipeName"
                 type="text"
                 name="recipeName"
@@ -142,7 +142,7 @@ class SingleRecipe extends Component {
               <Form.Label>IMAGE URL</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-recipe"
                 id="recipeImg"
                 type="text"
                 name="recipeImg"
@@ -154,7 +154,7 @@ class SingleRecipe extends Component {
               <Form.Label>PREP TIME</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-recipe"
                 id="cookingTime"
                 type="text"
                 name="cookingTime"
@@ -167,7 +167,7 @@ class SingleRecipe extends Component {
               <Form.Label>INGREDIENTS</Form.Label>
               <Form.Control
                 type="text"
-                className="text-center"
+                className="text-center form-recipe"
                 id="ingredient"
                 type="text"
                 name="ingredient"
@@ -181,7 +181,7 @@ class SingleRecipe extends Component {
               <Form.Control
                 as="textarea"
                 type="text"
-                className="text-center"
+                className="text-center form-recipe"
                 id="recipeDescription"
                 type="text"
                 name="recipeDescription"

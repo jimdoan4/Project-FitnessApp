@@ -8,11 +8,20 @@ margin-left: 170px;
 margin-right: 170px;
 }
 
+.form-control {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px!important;
+}
+
+.form-group label {
+    font-size: 13px!important;
+}
 
 .recipe-title {
     color: black;
     font-weight: bold;
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     padding: 15px;
 }
 
