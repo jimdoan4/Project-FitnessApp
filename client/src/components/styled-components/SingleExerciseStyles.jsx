@@ -34,6 +34,8 @@ export const SingleExerciseContainer=styled.div `
     margin-right: 10px;
     margin-top: 13px;
     margin-bottom: 13px;
+    border-radius: 4px;
+    letter-spacing: 4px;
 }
 
 .edit-exercise-button:hover {
@@ -48,6 +50,8 @@ export const SingleExerciseContainer=styled.div `
     border: 1px solid black;
     margin-top: 13px;
     margin-bottom: 13px;
+    border-radius: 4px;
+    letter-spacing: 4px;
 }
 
 .delete-exercise-button:hover {
@@ -65,6 +69,8 @@ export const SingleExerciseContainer=styled.div `
     padding-right: 60px;
     margin-top: 1px;
     margin-bottom: 20px;
+    border-radius: 4px;
+    letter-spacing: 4px;
 }
 
 .submit-button:hover {

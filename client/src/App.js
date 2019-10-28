@@ -8,6 +8,7 @@ import RecipePage from './components/RecipePage.jsx'
 import Exercises from './components/Exercises.jsx'
 import ExercisePage from './components/ExercisePage.jsx'
 import Benefits from './components/Benefits.jsx'
+import Shop from './components/Shop.jsx'
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
               <Route exact path='/exercises/' component={Exercises} />
               <Route exact path='/exercises/:exerciseId/' component={ExercisePage} />
               <Route exact path='/members/' component={Benefits} />
+              <Route exact path='/shop/' component={Shop} />
        
             </Switch>
           </div>

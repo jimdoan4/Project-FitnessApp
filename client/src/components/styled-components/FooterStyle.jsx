@@ -20,7 +20,10 @@ export const FooterContainer = styled.div`
 .nav-link:hover {
 font-weight: bold;
   color: black!important;
+}
 
+.logo {
+  margin-top: 25px;
 }
 .footer {
     /* position: fixed; */

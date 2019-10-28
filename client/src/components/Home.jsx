@@ -33,21 +33,15 @@ export default class Home extends Component {
             <button className="start-button">GET STARTED TODAY</button>
           </div>
         </div>
+        
         <div className="member-container">
-          <h2 className="text-center sub-header">MEMBERSHIP & SERVICE</h2>
           <div class="row module">
             <div class="column-img">
-              <h1 class="mt-5 display-4 sub-headers text-center">
-                Enjoy the benefits of being a member
+              <h1 class="mt-5 display-4 sub-header text-center">
+              MEMBERSHIP WITH BENEFITS
               </h1>
               <h2 className="member-text text-center">
-                We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear.  We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear.  We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear.  We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear.  We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear.  We’ve taken our obsession for fitness and channeled it into
-                creating the perfect collection of activewear. 
+              Unlimited Group Fitness is just the beginning. Discover all the ways you could unlock your potential with an Equinox membership—including luxe amenities and exceptional services. 
               </h2>
             </div>
             <div class="column-img">

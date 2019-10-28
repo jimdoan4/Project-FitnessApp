@@ -104,12 +104,36 @@ export default class Recipes extends Component {
                 fontSize: "4vw",
                 padding: "15px"
               }}>
-              CHECK OUT OUR RECIPES
+             RECIPES AND TIPS
             </h1>
           </div>
         </div>
+
+
+        <div className="member-container">
+          <div class="row">
+          {this.state.recipes.map(recipe => {
+            return (
+            <div key={recipe._id} class="column-imgs">
+            <img
+                    className="card-img member-imgs"
+                    src={recipe.recipeImg}
+                    alt={recipe.recipeName}
+                    // style={{ maxWidth: "320px", height: "250px", maxHeight:"250px"}}
+                  />
+              {/* <h2 className="member-text text-center">
+              Unlimited Group Fitness is just the beginning. Discover all the ways you could unlock your potential with an Equinox membership—including luxe amenities and exceptional services. 
+              </h2> */}
+              
+            </div>
+           
+   
       
-        <RecipeContainer>
+        );
+          })}
+          </div>
+          </div>
+        {/* <RecipeContainer>
         <div className="card-flex">
           {this.state.recipes.map(recipe => {
             return (
@@ -135,44 +159,15 @@ export default class Recipes extends Component {
                       </Link>
                     </h3>
                   </div>
-                  {/* <div className="card-body" style={{color:"black"}}>
-                  <p>Cook Time: {recipe.cookingTime}</p>
-                  <p>{recipe.recipeDescription}</p> 
-                  </div> */}
+              
                 </div>
               </div>
               
             );
           })}
           </div>
-        </RecipeContainer>
-        {/* <RecipeContainer className="container-fluid">
-          {this.state.recipes.map(recipe => {
-            return (
-              <div className="recipe-side-margin">
-              <div class="media jumbotron clear-fix" style={{ backgroundColor:"#f7f7f7" }}>
-                <img
-                  src={recipe.recipeImg}
-                  className="align-self-start mr-3 recipe-image"
-                  alt={recipe.recipeName}
-                />
-                <div class="media-body text-center" key={recipe._id}>
-                  <h4>{recipe.recipeName}</h4>
-                  <p>Cook Time: {recipe.cookingTime}</p>
-                  <p>{recipe.recipeDescription}</p> 
-                
-                  <Link to={`/recipes/${recipe._id}/`} key={recipe._id} className="recipe-button">
-                    GET THE RECIPE
-                  </Link>
-          
-                </div>
-              </div>
-              <hr/>
-              </div>
-            );
-            
-          })}
         </RecipeContainer> */}
+    
        
 
         <div className="jumbotron jumbotron-fluid recipe-jumbotron" style={{backgroundColor:"#e3dfda"}}>

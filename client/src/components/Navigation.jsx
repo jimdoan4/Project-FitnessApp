@@ -13,9 +13,9 @@ class Navigation extends Component {
        <NavContainer>
         <Navbar className="nav" expand="lg" fixed="top">
           {/* <Navbar.Brand className="nav-link" href="/">ATLANTA CYCLE GYM</Navbar.Brand> */}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle className="nav-button" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto text-center">
+            <Nav className="mr-auto">
               <Nav.Link className="nav-link" href="/">HOME</Nav.Link>
               <Nav.Link className="nav-link" href="/exercises/">TRAINING</Nav.Link>
               <Nav.Link className="nav-link" href="/recipes/">RECIPES</Nav.Link>
@@ -23,14 +23,15 @@ class Navigation extends Component {
               <Nav.Link className="nav-link" href="/members/">MEMBERSHIP</Nav.Link>
          
             </Nav>
-            <Form inline>
+            <Nav.Link className="nav-link" href="/members/">MEMBERSHIP</Nav.Link>
+            {/* <Form inline>
               <FormControl
                 type="text"
                 placeholder="Search"
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Search</Button>
-            </Form>
+            </Form> */}
           </Navbar.Collapse>
         </Navbar>
        </NavContainer>

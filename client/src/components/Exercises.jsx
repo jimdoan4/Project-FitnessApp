@@ -85,7 +85,7 @@ export default class Exercises extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://www.socialmediamarketingwi.com/wp-content/uploads/2019/08/57.jpg"
+            src="https://www.harpersbazaararabia.com/sites/default/files/styles/ful_scr_img/public/images/2019/10/03/hba-dubaiactiveshow-lead.jpg?itok=8Xb61gCF"
             alt="Workout"
           />
           <div className="card-img-overlay">
@@ -104,10 +104,12 @@ export default class Exercises extends Component {
         </div>
         <div
           class="jumbotron jumbotron-fluid"
-          style={{ backgroundColor: "white" }}
+          style={{ backgroundColor: "white", color: "black" }}
         >
           <div class="container text-center">
-            <h3 class="display-5">PERSONAL TRAINING AT ATLANTA CYCLE GYM</h3>
+            <h2 class="display-4 sub-header">
+              PERSONAL TRAINING AT ATLANTA CYCLE GYM
+            </h2>
             <p class="lead">
               You can, and you will. With the right personal trainer, you’re
               partners in the impossible.

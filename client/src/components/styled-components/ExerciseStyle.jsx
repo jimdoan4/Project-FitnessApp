@@ -17,9 +17,9 @@ color: black;
 }
 
 .exercise-submit-button {
-    background-color: black;
-    color: white;
-    border: 1px solid black;
+    background-color: #f7f6f5;
+    color: black;
+    border: 1px solid #f7f6f5;
     justify-content: center;
     padding-left: 85px;
     padding-right: 85px;
@@ -27,6 +27,10 @@ color: black;
     margin-bottom: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
+    border-radius: 4px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .exercise-submit-button:hover {
