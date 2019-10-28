@@ -16,8 +16,9 @@ class Footer extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto text-center">
               <Nav.Link className="nav-link" href="/">HOME</Nav.Link>
-              <Nav.Link className="nav-link" href="/exercises/">FITNESS</Nav.Link>
+              <Nav.Link className="nav-link" href="/exercises/">TRAINING</Nav.Link>
               <Nav.Link className="nav-link" href="/recipes/">RECIPES</Nav.Link>
+              <Nav.Link className="nav-link" href="/shop/">SHOP</Nav.Link>
               <Nav.Link className="nav-link" href="/members/">MEMBERSHIP</Nav.Link>
          
             </Nav>

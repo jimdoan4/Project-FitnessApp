@@ -17,18 +17,14 @@ h2{
 /* Slider */
 
 .slick-slide {
-    /* margin: 0px 0px;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: space-around !important; */
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px; 
 }
 
 .slide img {
-    height: 26vw;
-    width: 21vw!important;
+    height: 25vw;
+    width: 21.5vw!important;
     width: 100%;
 }
 
@@ -57,14 +53,17 @@ h2{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 13.5px;
+    border-radius: 4px;
+    letter-spacing: 4px;
 }
 
 .fitness-button:hover {
-    box-shadow: 1px 3px 12px 0px #e88000;
-    color: white;
-    background: #e88000;
-    border: 1px solid #e88000;
+    box-shadow: 6px 3px 12px 4px #f7f6f5;
+    color: black;
+    background: white;
+    border: 1px solid #f7f6f5;
     text-decoration: none;
+    font-weight: bold;
   }
 
 .slick-slider

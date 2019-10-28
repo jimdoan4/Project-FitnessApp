@@ -4,12 +4,23 @@ import styled from 'styled-components'
 export const FooterContainer = styled.div`
 .nav {
   /* box-shadow: 2px 2px 1px 2px #b3b3b3; */
-  /* background-color: black; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+   background-color: #e3dfda; 
+  
+ 
+
 }
 .nav-link {
   font-size: 15px;
   margin-right: 40px;
   color: black!important;
+}
+
+.nav-link:hover {
+font-weight: bold;
+  color: black!important;
+
 }
 .footer {
     /* position: fixed; */

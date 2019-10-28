@@ -10,8 +10,14 @@ export const NavContainer = styled.div`
   font-size: 15px;
   margin-right: 40px;
   color: white!important;
+  letter-spacing: 1px;
 }
-  
+
+.nav-link:hover {
+font-weight: bold;
+  color: black!important;
+
+}
  
 
 `
