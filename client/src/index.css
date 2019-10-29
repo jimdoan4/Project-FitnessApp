@@ -130,6 +130,7 @@ body {
   max-height: 740px;
   border-radius: 9px;
   box-shadow: 1px 0px 1px 0px #b3b3b3;
+  opacity: 77%;
 }
 
 .card {
