@@ -123,14 +123,13 @@ body {
 }
 
 .main-img {
-  opacity: 77%;
+  opacity: 77%!important;
 }
 
 .card-img {
-  max-height: 740px;
-  border-radius: 9px;
+  max-height: 740px!important;
+  border-radius: 9px!important;
   box-shadow: 1px 0px 1px 0px #b3b3b3;
-  opacity: 77%;
 }
 
 .card {
