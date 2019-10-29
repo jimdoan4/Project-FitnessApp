@@ -157,7 +157,7 @@ export default class Exercises extends Component {
           <div className="container">
             <ExerciseForm
               exercise={this.state.newExercise}
-              handleChange={this.handleExerciseChange}
+              handleChange={this.handleChange}
               handleSubmit={this.createExercise}
               submitBtnText="SUBMIT"
             />

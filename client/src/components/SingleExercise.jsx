@@ -79,7 +79,7 @@ class SingleExercise extends Component {
 
   render() {
     if (this.state.redirectToSingleExercise) {
-      return <Redirect to={`/exercises/`} />;
+      return <Redirect to={`/exercises`} />;
     }
     return (
       <SingleExerciseContainer>

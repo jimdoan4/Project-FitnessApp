@@ -22,7 +22,7 @@ export default function ExerciseForm(props) {
             id="fitnessImg"
             name="fitnessImg"
             value={props.exercise.fitnessImg}
-            onChange={props.handleExerciseChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-row">
@@ -36,7 +36,7 @@ export default function ExerciseForm(props) {
             id="type"
             name="type"
             value={props.exercise.type}
-            onChange={props.handleExerciseChange}
+            onChange={props.handleChange}
           />
         </div>
         <div className="form-group col-md-4">
@@ -49,7 +49,7 @@ export default function ExerciseForm(props) {
             id="equipment"
             name="equipment"
             value={props.exercise.equipment}
-            onChange={props.handleExerciseChange}
+            onChange={props.handleChange}
           />
         </div>
    
@@ -63,7 +63,7 @@ export default function ExerciseForm(props) {
             id="difficulty"
             name="difficulty"
             value={props.exercise.difficulty}
-            onChange={props.handleExerciseChange}
+            onChange={props.handleChange}
           />
         </div>
          
@@ -78,7 +78,7 @@ export default function ExerciseForm(props) {
             id="instruction"
             name="instruction"
             value={props.exercise.instruction}
-            onChange={props.handleExerciseChange} rows="3"></textarea>
+            onChange={props.handleChange} rows="3"></textarea>
    
         </div>
         <div className="text-center form-group">
