@@ -90,7 +90,7 @@ export default class Exercises extends Component {
           />
           <div className="card-img-overlay">
             <h1
-              className="display-5 centered workout-all-margin"
+              className="display-5 training-header centered workout-all-margin"
               style={{
                 color: "white",
                 fontWeight: "bold",

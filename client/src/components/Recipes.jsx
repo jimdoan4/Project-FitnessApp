@@ -3,12 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import RecipeForm from "./RecipeForm.jsx";
 import { RecipeContainer } from "./styled-components/RecipeStyles";
-import { Card } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { Jumbotron } from "react-bootstrap";
-import { CardGroup } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 
 export default class Recipes extends Component {
   state = {
@@ -30,7 +24,7 @@ export default class Recipes extends Component {
     this.getAllRecipes();
   };
 
-  //Function to get all Facts from axios via our API
+  //Function to get all Recipes from axios via our API
   getAllRecipes = () => {
     axios.get(`/api/recipes/`).then(res => {
       this.setState({ recipes: res.data });
@@ -99,7 +93,7 @@ export default class Recipes extends Component {
           />
           <div className="card-img-overlay">
             <h1
-              className="display-5 centered workout-all-margin"
+              className="display-5 recipe-header centered workout-all-margin"
               style={{
                 color: "white",
                 fontWeight: "bold",
@@ -112,16 +106,18 @@ export default class Recipes extends Component {
           </div>
         </div>
         <RecipeContainer>
-          <div className="member-container">
-            <div class="row">
+          <div className="recipe-container">
+            <div className="row">
               {this.state.recipes.map(recipe => {
                 return (
-                  <div key={recipe._id} class="column text-center card">
+                  <div key={recipe._id} className="column-recipe text-center card-img">
                     <img
+                    className="recipe-img"
                       src={recipe.recipeImg}
                       alt={recipe.recipeName}
   
                     />
+                    <br />
                     <br />
                     <h3>{recipe.recipeName}</h3>
                     <div className="button-centered text-center">

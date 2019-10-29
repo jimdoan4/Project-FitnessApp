@@ -11,7 +11,7 @@ export const FooterContainer = styled.div`
 }
 .footer .col {
   width: 190px;
-  height: 180px!important;
+  height: 60px!important;
   float: left;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -44,6 +44,16 @@ export const FooterContainer = styled.div`
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
+
+.footer-link {
+  color: white;
+}
+
+.footer-link:hover {
+font-weight: bold;
+  color: black!important;
+}
+
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
