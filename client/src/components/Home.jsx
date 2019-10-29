@@ -7,7 +7,7 @@ export default class Home extends Component {
       <div>
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
-            className="main-img card-img"
+            className="card-img"
             src="https://www.washingtonian.com/wp-content/uploads/2019/05/iStock-1007730100-1500x1000.jpg"
             alt="Home"
           />
