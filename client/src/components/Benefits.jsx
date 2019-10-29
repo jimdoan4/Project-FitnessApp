@@ -28,7 +28,7 @@ export default class Benefits extends Component {
         >
           <div className="container text-center">
             <h2 className="display-4 sub-header">
-              PERSONAL TRAINING AT ATLANTA CYCLE GYM
+              PERSONAL TRAINING AT ATLANTA CYCLE CLUB
             </h2>
             <p className="lead">
               You can, and you will. With the right personal trainer, you’re

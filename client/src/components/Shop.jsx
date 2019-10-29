@@ -20,7 +20,7 @@ export default class Shop extends Component {
                 padding: "15px"
               }}
             >
-              THE SHOP AT ATLANTA CYCLE GYM
+              THE SHOP AT ATLANTA CYCLE CLUB
             </h2>
           </div>
         </div>

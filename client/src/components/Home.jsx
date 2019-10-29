@@ -13,7 +13,7 @@ export default class Home extends Component {
           />
           <div className="card-img-overlay text-center">
             <h2 className="display-5 centered main-header workout-all-margin">
-              ATLANTA CYCLE GYM
+              ATLANTA CYCLE CLUB
             </h2>
           </div>
         </div>
@@ -24,7 +24,7 @@ export default class Home extends Component {
         >
           <div className="container text-center">
             <h2 className="display-4 sub-header">
-              PERSONAL TRAINING AT ATLANTA CYCLE GYM
+              PERSONAL TRAINING AT ATLANTA CYCLE CLUB
             </h2>
             <p className="lead">
               You can, and you will. With the right personal trainer, you’re

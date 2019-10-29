@@ -108,7 +108,7 @@ export default class Exercises extends Component {
         >
           <div class="container text-center">
             <h2 class="display-4 sub-header">
-              PERSONAL TRAINING AT ATLANTA CYCLE GYM
+              PERSONAL TRAINING AT ATLANTA CYCLE CLUB
             </h2>
             <p class="lead">
               You can, and you will. With the right personal trainer, you’re
