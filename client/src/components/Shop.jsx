@@ -7,7 +7,7 @@ export default class Shop extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img main-img"
-            src="https://d50b62f6164e0c4a0279-11570554cb5edae3285603e6ab25c978.ssl.cf5.rackcdn.com/html_body_blocks/images/000/011/922/original/PWR_at_Home_Workout_ena86967915ab4c3c11809ad2c17d9bd2c.jpg?1554678228"
+            src="http://fitblog.com.tr/wp-content/uploads/2019/10/shutterstock_1185036736-1024x683.jpg"
             alt="Shop"
           />
           <div className="card-img-overlay text-center">

@@ -8,7 +8,7 @@ export default class Home extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img main-img"
-            src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2019040971870/sweat-trainer-kelsey-wells-fitness-tips-new-mums/0-350-475/Kelsey-Wells-t.jpg"
+            src="https://www.washingtonian.com/wp-content/uploads/2019/05/iStock-1007730100-1500x1000.jpg"
             alt="Home"
           />
           <div className="card-img-overlay text-center">

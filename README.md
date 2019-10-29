@@ -5,7 +5,7 @@ Atlanta Cycle Club is an react application, which allows user to add  workouts/e
 
 ### Project Links
 
-[Heroku](https://insurance-backdoor.herokuapp.com/)
+[Heroku](https://soulcycle.herokuapp.com/)
 
 
 ### Technical Specifications
