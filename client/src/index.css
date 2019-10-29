@@ -122,15 +122,18 @@ body {
   margin-top: 26rem;
 }
 
-.main-img {
-  opacity: 77%;
-}
-
 .card-img {
   max-height: 740px;
   border-radius: 9px;
   box-shadow: 1px 0px 1px 0px #b3b3b3;
+  opacity: 77%;
 }
+
+.main-img {
+  opacity: 77%;
+  max-height: 740px;
+}
+
 
 .card {
   border-radius: 9px;

@@ -28,7 +28,7 @@ class Navigation extends Component {
                 SHOP
               </Nav.Link>
             </Nav>
-            <Nav.Link>
+            {/* <Nav.Link>
               <img
                 src="https://svgshare.com/i/5fq.svg"
                 width="32"
@@ -48,7 +48,7 @@ class Navigation extends Component {
                 width="32"
                 style={{ width: "30px" }}
               />
-            </Nav.Link>
+            </Nav.Link> */}
           </Navbar.Collapse>
         </Navbar>
       </NavContainer>
