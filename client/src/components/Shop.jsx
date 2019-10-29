@@ -27,25 +27,49 @@ export default class Shop extends Component {
         </div>
 
         <br />
-
-        <div className="shop-container">
-          <div className="row">
-            <div className="column-shop">
-              <img
-                className="member-img card-img"
-                src="https://d50b62f6164e0c4a0279-11570554cb5edae3285603e6ab25c978.ssl.cf5.rackcdn.com/html_body_blocks/images/000/011/928/original/PWR_at_Home_en472abbcd7c16f793585b09ed83341e54.jpg?1554679751"
-              />
-                <h1 className="mt-5 display-4 sub-header text-center">
-                ATLANTA CYCLE PERFORMANCE WEAR
+        <div className="flex-container">
+            <div className="flex-col">
+              <h1 className="mt-5 display-4 sub-header text-center">
+              ATLANTA CYCLE PERFORMANCE WEAR
               </h1>
               <h2 className="member-text text-center">
-                Introducing the first Performance Wear line. Get it at
+              Introducing the first Performance Wear line. Get it at
                 The Shop now. We’ve taken our obsession for fitness and
                 channeled it into creating the perfect collection of activewear.
               </h2>
-            </div>           
             </div>
+            <div className="column-imgss flex-col">
+              <img
+                className="member-img card-img"
+                src="http://fitblog.com.tr/wp-content/uploads/2019/10/shutterstock_1185036736-1024x683.jpg"
+              />
+              <div className="middle">
+                <div className="text">John Doe</div>
+              </div>
           </div>
+        </div>
+        <br/>
+        <br/>
+        <div className="flex-container">
+            <div className="column-imgss flex-col">
+              <img
+                className="member-img card-img"
+                src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2012%2F05%2F16182731%2Fhiit-workouts-for-women-weight-loss.jpg&q=85"
+              />
+              <div className="middle">
+                <div className="text">John Doe</div>
+              </div>
+          </div>
+          <div className="flex-col">
+              <h1 className="mt-5 display-4 sub-header text-center">
+              MEMBERSHIP WITH BENEFITS
+              </h1>
+              <h2 className="member-text text-center">
+              Unlimited Group Fitness is just the beginning. Discover all the ways you could unlock your potential with a membership—including luxe amenities and exceptional services. 
+              </h2>
+            </div>
+        </div>
+        <br/>
         </div>
     );
   }

@@ -34,10 +34,8 @@ export default class Home extends Component {
             <button className="start-button">GET STARTED TODAY</button>
           </div>
         </div>
-        
-        <div className="member-container">
-          <div className="row module">
-            <div className="column-img">
+        <div className="flex-container">
+            <div className="flex-col">
               <h1 className="mt-5 display-4 sub-header text-center">
               MEMBERSHIP WITH BENEFITS
               </h1>
@@ -45,7 +43,7 @@ export default class Home extends Component {
               Unlimited Group Fitness is just the beginning. Discover all the ways you could unlock your potential with a membership—including luxe amenities and exceptional services. 
               </h2>
             </div>
-            <div className="column-img">
+            <div className="column-imgss flex-col">
               <img
                 className="member-img card-img"
                 src="https://media1.popsugar-assets.com/files/thumbor/gNPMqznk7wYWIs_g8w9QWDeIg-c/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/01/18/748/n/1922729/tmp_g13kI4_210fdc7e610ec25d_GettyImages-891326080.jpg"
@@ -53,9 +51,11 @@ export default class Home extends Component {
               <div className="middle">
                 <div className="text">John Doe</div>
               </div>
-            </div>
           </div>
         </div>
+<br/>
+<br/>
+<br/>
         <HomeContainer>
           <div className="container-fluid">
             <h2 className="sub-header">TRAINING ROOM</h2>

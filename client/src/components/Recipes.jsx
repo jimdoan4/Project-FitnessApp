@@ -88,7 +88,7 @@ export default class Recipes extends Component {
         >
           <img
             className="card-img"
-            src="https://www.wholefoodsmarket.com/sites/default/files/media/Global/Blogs/10_1_vol3_leopatrone.jpeg"
+            src="https://www.weightwatchers.com/ca/sites/ca/files/styles/wwvs_default_image/public/article_masthead/chicken_masthead_0.jpg?itok=OOndQXF-"
             alt="Recipe"
             style={{opacity: "75%"}}
           />

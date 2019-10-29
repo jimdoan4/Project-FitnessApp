@@ -24,6 +24,14 @@ font-family: "Lato", sans-serif !important;
   padding: 0 4px;
 }
 
+.card {
+    background-color: #faf9f2;
+    color: black;
+    box-shadow: 1px 1px 1px 0px #b3b3b3;
+    width: 14vw!important;
+    margin: 10px;
+
+}
 .recipe-img:hover {
     box-shadow: 2px 3px 2px 2px #b3b3b3;
     height: 16vw;

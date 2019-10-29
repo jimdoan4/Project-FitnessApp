@@ -11,11 +11,19 @@ export const NavContainer = styled.div`
   font-weight: bold;
 }
 
+.home-link {
+  font-size: 15px;
+  margin-right: 40px;
+  color: black!important;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: white;
+}
+
 .nav-link:hover {
 font-weight: bold;
   color: black!important;
   background-color: white;
-
 }
 
 
