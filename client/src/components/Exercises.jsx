@@ -84,7 +84,8 @@ export default class Exercises extends Component {
       <div>
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
-            className="card-img main-img"
+            id="main-img"
+            className="card-img"
             src="https://www.harpersbazaararabia.com/sites/default/files/styles/ful_scr_img/public/images/2019/10/03/hba-dubaiactiveshow-lead.jpg?itok=8Xb61gCF"
             alt="Workout"
           />
