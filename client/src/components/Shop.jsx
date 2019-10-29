@@ -9,6 +9,7 @@ export default class Shop extends Component {
             className="card-img"
             src="https://www.washingtonian.com/wp-content/uploads/2019/05/iStock-1007730100-1500x1000.jpg"
             alt="Shop"
+            style={{opacity: "75%"}}
           />
           <div className="card-img-overlay text-center">
             <h2

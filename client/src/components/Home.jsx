@@ -10,6 +10,7 @@ export default class Home extends Component {
             className="card-img"
             src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2019040971870/sweat-trainer-kelsey-wells-fitness-tips-new-mums/0-350-475/Kelsey-Wells-t.jpg"
             alt="Home"
+            style={{opacity: "75%"}}
           />
           <div className="card-img-overlay text-center">
             <h2 className="display-5 centered main-header workout-all-margin">

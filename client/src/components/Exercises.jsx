@@ -87,6 +87,7 @@ export default class Exercises extends Component {
             className="card-img"
             src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2018010345124/best-free-gym-deals-of-new-year-2019/0-228-119/girls-exercising-z.jpg"
             alt="Workout"
+            style={{opacity: "75%"}}
           />
           <div className="card-img-overlay">
             <h1

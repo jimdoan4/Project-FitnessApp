@@ -90,6 +90,7 @@ export default class Recipes extends Component {
             className="card-img"
             src="https://www.wholefoodsmarket.com/sites/default/files/media/Global/Blogs/10_1_vol3_leopatrone.jpeg"
             alt="Recipe"
+            style={{opacity: "75%"}}
           />
           <div className="card-img-overlay">
             <h1
