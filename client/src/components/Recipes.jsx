@@ -87,7 +87,7 @@ export default class Recipes extends Component {
           style={{ marginBottom: "30px" }}
         >
           <img
-            className="main-img card-img"
+            className="card-img"
             src="https://www.rd.com/wp-content/uploads/2018/04/50-Fitness-Myths-that-can-Seriously-Damage-Your-Health-15-760x506.jpg"
             alt="Recipe"
           />
