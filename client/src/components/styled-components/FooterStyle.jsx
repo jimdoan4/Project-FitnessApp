@@ -47,6 +47,7 @@ export const FooterContainer = styled.div`
 
 .footer-link {
   color: white;
+  font-weight: bold;
 }
 
 .footer-link:hover {

@@ -85,7 +85,7 @@ export default class Exercises extends Component {
         <div className="bg-dark text-white workout-margin workout-jumbo">
           <img
             className="card-img"
-            src="https://www.harpersbazaararabia.com/sites/default/files/styles/ful_scr_img/public/images/2019/10/03/hba-dubaiactiveshow-lead.jpg?itok=8Xb61gCF"
+            src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2018010345124/best-free-gym-deals-of-new-year-2019/0-228-119/girls-exercising-z.jpg"
             alt="Workout"
           />
           <div className="card-img-overlay">
