@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   position: relative;
   height: auto!important;
   background-color: #e3dfda;
-  color: white;
+  color: black;
 }
 .footer .col {
   width: 190px;
@@ -24,7 +24,7 @@ export const FooterContainer = styled.div`
   font-size: 16px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: white;
+  color: black;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -46,13 +46,13 @@ export const FooterContainer = styled.div`
 }
 
 .footer-link {
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .footer-link:hover {
 font-weight: bold;
-  color: black!important;
+  color: white!important;
 }
 
 .social ul li {

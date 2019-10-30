@@ -61,7 +61,6 @@ export default class Exercises extends Component {
       });
   };
 
-
   //Toggles the Edit form
   toggleExerciseForm = () => {
     this.setState((state, props) => {
@@ -87,7 +86,7 @@ export default class Exercises extends Component {
             className="card-img"
             src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2018010345124/best-free-gym-deals-of-new-year-2019/0-228-119/girls-exercising-z.jpg"
             alt="Workout"
-            style={{opacity: "75%"}}
+            style={{ opacity: "75%" }}
           />
           <div className="card-img-overlay">
             <h1
@@ -136,7 +135,7 @@ export default class Exercises extends Component {
                     <h3 className="card-title centered scale">
                       <Link
                         to={`/exercises/${exercise._id}/`}
-                        key={exercise._id} 
+                        key={exercise._id}
                         className="workout-link"
                       >
                         {exercise.type}
@@ -148,8 +147,8 @@ export default class Exercises extends Component {
             );
           })}
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <div
           className="jumbotron jumbotron-fluid recipe-jumbotron"
           style={{ backgroundColor: "#e3dfda" }}

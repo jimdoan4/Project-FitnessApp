@@ -6,7 +6,6 @@ export const SingleExerciseContainer=styled.div `
     margin-bottom: 30px;
 }
 
-
 .exercise-title {
     font-size: 15px;
 }
@@ -18,12 +17,14 @@ export const SingleExerciseContainer=styled.div `
 }
 
 .exercise-img {
-
-   display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width:55%;
-  max-height: 38rem;
+  width: 53%;
+  max-height: 48rem;
+  border-radius: 5px;
+  box-shadow: 1px 0px 1px 0px #b3b3b3;
+
 
 }
 

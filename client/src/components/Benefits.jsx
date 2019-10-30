@@ -11,13 +11,15 @@ export default class Benefits extends Component {
             alt="Membership"
           />
           <div className="card-img-overlay text-center">
-            <h1 className="display-5 centered workout-all-margin"  
-            style={{
+            <h1
+              className="display-5 centered workout-all-margin"
+              style={{
                 color: "white",
                 fontWeight: "bold",
                 fontSize: "4.7vw",
                 padding: "15px"
-              }}>
+              }}
+            >
               MEMBERSHIP BENEFITS
             </h1>
           </div>
@@ -37,7 +39,7 @@ export default class Benefits extends Component {
             <button className="start-button">GET STARTED TODAY</button>
           </div>
         </div>
- 
+
         <br />
       </div>
     );

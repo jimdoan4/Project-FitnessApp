@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
 .slider {
-margin-right: 55px!important;
-margin-left: 55px!important; 
+margin-right: 55.5px!important;
+margin-left: 55.5px!important; 
 }
 
 h2{
@@ -27,8 +27,9 @@ h2{
 }
 .slide img {
     width: 30rem;
-  height: 29rem;
+  height: 30rem;
   text-align: center;
+  border-radius: 5px;
 }
 
 .slide:hover img {

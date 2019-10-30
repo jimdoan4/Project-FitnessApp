@@ -106,12 +106,12 @@ export default class Recipes extends Component {
             </h1>
           </div>
         </div>
+
         <RecipeContainer>
-          <div className="recipe-container">
-            <div className="row">
+          <div className="flex-container">
               {this.state.recipes.map(recipe => {
                 return (
-                  <div key={recipe._id} className="column-recipe text-center card-img">
+                  <div key={recipe._id} className="grid-item text-center card-imgs">
                     <img
                     className="recipe-img"
                       src={recipe.recipeImg}
@@ -134,8 +134,8 @@ export default class Recipes extends Component {
                 );
               })}
             </div>
-          </div>
         </RecipeContainer>
+
         <br/>
         <div
           className="jumbotron jumbotron-fluid recipe-jumbotron"

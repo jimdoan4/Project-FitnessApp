@@ -19,12 +19,13 @@ export const SingleRecipeContainer=styled.div `
 }
 
 .recipe-img {
-
    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 55%;
-  max-height: 38rem;
+  width: 53%;
+  max-height: 48rem;
+  border-radius: 5px;
+  box-shadow: 1px 0px 1px 0px #b3b3b3;
 
 }
 

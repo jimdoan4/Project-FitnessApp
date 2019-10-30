@@ -5,33 +5,23 @@ export const RecipeContainer = styled.div`
 background-color:"#e3dfda";
 color: black;
 font-family: "Lato", sans-serif !important;
-
 }
 
-.row {
-  display: flex;
+.flex-container {
+    display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-bottom: 20px;
+  justify-content: space-around;
 }
 
-/* Create four equal columns that sits next to each other */
-.column-recipe {
-  flex: 20%;
-  max-width: 25%;
-  padding: 0 4px;
+.grid-item {
+    background-color: #f1f1f1;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 30px;
 }
 
-.card {
-    background-color: #faf9f2;
-    color: black;
-    box-shadow: 1px 1px 1px 0px #b3b3b3;
-    width: 14vw!important;
-    margin: 10px;
-
-}
 .recipe-img:hover {
     box-shadow: 2px 3px 2px 2px #b3b3b3;
     height: 16vw;
@@ -46,13 +36,9 @@ margin-right: auto;
 border: .8px solid #e6e6e6;
 }
 
-.card-img {
-    margin: 10px;
-    background-color: white;
-}
 
 .recipe-img {  
-    width: 19vw;
+    width: 20.5vw;
     height: 16vw;
     border-radius: 2%;
 }
@@ -124,37 +110,16 @@ border: .8px solid #e6e6e6;
 
 /**************************** MEDIA-QUERY-IPHONE X ***************************/
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-.card {
-    margin-bottom: 20px;
-}
-.card img {
-    height: 23rem;
-}
 
 .recipe-title {
     font-weight: bold;
     font-size: 7vw!important;
  }
  .recipe-img {  
-    width: 39vw;
-    height: 39vw;
-}
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column-recipe {
-    flex: 50%;
-    max-width: 50%;
+    width: 61vw;
+    height: 42vw;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column-recipe {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 
 `

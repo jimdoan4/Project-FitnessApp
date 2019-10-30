@@ -8,7 +8,6 @@ class Navigation extends Component {
     return (
       <NavContainer>
         <Navbar className="nav" expand="lg" fixed="top">
-          {/* <Navbar.Brand className="nav-link" href="/" style={{marginTop: "22px"}}>SUNRISE GYM</Navbar.Brand>  */}
           <Navbar.Toggle
             className="nav-button"
             aria-controls="basic-navbar-nav"
