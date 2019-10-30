@@ -3,29 +3,32 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
 .slider {
-margin-right: 66px!important;
-margin-left: 66px!important;
+margin-right: 55px!important;
+margin-left: 55px!important; 
 }
- /* img {
-    margin-right: 20px!important;
-}  */
+
 h2{
   text-align:center;
   padding: 20px;
 }
 
 /* Slider */
-
 .slick-slide {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px; 
+  justify-content: space-around;
 }
 
+.slide {
+  width: 30rem;
+  text-align: center;
+  line-height: 25px;
+  margin: 16px 0px 16px 0px; 
+}
 .slide img {
-    height: 25vw;
-    width: 21.5vw!important;
-    width: 100%;
+    width: 30rem;
+  height: 29rem;
+  text-align: center;
 }
 
 .slide:hover img {
@@ -34,12 +37,6 @@ h2{
     backface-visibility: hidden;
   }
 
-/* .button-centered {
-  position: absolute;
-  top: 80%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-} */
 
 .fitness-button {
     background-color: black;
@@ -144,11 +141,7 @@ h2{
 {
     float: right;
 }
-.slick-slide img
-{
-    display: block;
-    
-}
+
 .slick-slide.slick-loading img
 {
     display: none;
@@ -174,42 +167,6 @@ h2{
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 20px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    height: 32rem;
-    transition: .5s ease;
-    backface-visibility: hidden;
-
-  }
-
-
-
-
-
-  .column:hover img {
-    opacity: 0.3;
-  }
-
-
  
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
