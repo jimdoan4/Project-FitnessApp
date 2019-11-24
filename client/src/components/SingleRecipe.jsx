@@ -62,7 +62,8 @@ class SingleRecipe extends Component {
       .then(res => {
         this.setState({ recipe: res.data, displayEditForm: false });
       });
-    this.getRecipeData();
+      console.log("hello");
+    // this.getRecipeData();
   };
 
   deleteRecipe = () => {
@@ -129,7 +130,6 @@ class SingleRecipe extends Component {
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label>RECIPE NAME</Form.Label>
               <Form.Control
-                type="text"
                 className="text-center form-recipe"
                 id="recipeName"
                 type="text"
@@ -144,7 +144,6 @@ class SingleRecipe extends Component {
                 type="text"
                 className="text-center form-recipe"
                 id="recipeImg"
-                type="text"
                 name="recipeImg"
                 onChange={this.handleChange}
                 value={this.state.recipe.recipeImg}
@@ -156,7 +155,6 @@ class SingleRecipe extends Component {
                 type="text"
                 className="text-center form-recipe"
                 id="cookingTime"
-                type="text"
                 name="cookingTime"
                 onChange={this.handleChange}
                 value={this.state.recipe.cookingTime}
@@ -169,7 +167,6 @@ class SingleRecipe extends Component {
                 type="text"
                 className="text-center form-recipe"
                 id="ingredient"
-                type="text"
                 name="ingredient"
                 onChange={this.handleChange}
                 value={this.state.recipe.ingredient}
@@ -183,7 +180,6 @@ class SingleRecipe extends Component {
                 type="text"
                 className="text-center form-recipe"
                 id="recipeDescription"
-                type="text"
                 name="recipeDescription"
                 onChange={this.handleChange}
                 value={this.state.recipe.recipeDescription}

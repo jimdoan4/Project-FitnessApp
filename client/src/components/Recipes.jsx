@@ -38,7 +38,7 @@ export default class Recipes extends Component {
   createRecipe = e => {
     e.preventDefault();
     axios
-      .post("/api/recipes/", {
+      .post('/api/recipes/', {
         recipeImg: this.state.newRecipe.recipeImg,
         recipeName: this.state.newRecipe.recipeName,
         cookingTime: this.state.newRecipe.cookingTime,
@@ -46,7 +46,7 @@ export default class Recipes extends Component {
         recipeDescription: this.state.newRecipe.recipeDescription
       })
       .then(res => {
-        const recipesList = [this.state.recipes];
+        const recipesList = [...this.state.recipes];
         recipesList.unshift(res.data);
         this.setState({
           newRecipe: {
@@ -83,8 +83,7 @@ export default class Recipes extends Component {
     return (
       <div>
         <div
-          className="bg-dark text-white workout-margin workout-jumbo"
-          style={{ marginBottom: "30px" }}
+          className="bg-dark text-light workout-margin workout-jumbo mb-3"
         >
           <img
             className="card-img"
@@ -94,12 +93,10 @@ export default class Recipes extends Component {
           />
           <div className="card-img-overlay">
             <h1
-              className="display-5 recipe-header centered workout-all-margin"
+              className="display-5 recipe-header centered workout-all-margin text-light p-2"
               style={{
-                color: "white",
                 fontWeight: "bold",
-                fontSize: "4vw",
-                padding: "15px"
+                fontSize: "4vw"
               }}
             >
               RECIPES AND TIPS
@@ -108,18 +105,17 @@ export default class Recipes extends Component {
         </div>
 
         <RecipeContainer>
-          <div className="flex-container">
+          <div className="container-fluid">
+          <div className="row text-center m-5"> 
               {this.state.recipes.map(recipe => {
                 return (
-                  <div key={recipe._id} className="grid-item text-center card-imgs">
+                  <div key={recipe._id} className="col-lg-3 col-sm-6 mb-2">
                     <img
-                    className="recipe-img"
+                    className="recipe-img mb-5"
                       src={recipe.recipeImg}
                       alt={recipe.recipeName}
   
                     />
-                    <br />
-                    <br />
                     <h3>{recipe.recipeName}</h3>
                     <div className="button-centered text-center">
                       <Link
@@ -127,12 +123,13 @@ export default class Recipes extends Component {
                         key={recipe._id}
                         className="recipe-link button-centered recipe-button"
                       >
-                        VIEW MORE
+                        VIEW RECIPE
                       </Link>
                     </div>
                   </div>
                 );
               })}
+            </div>
             </div>
         </RecipeContainer>
 

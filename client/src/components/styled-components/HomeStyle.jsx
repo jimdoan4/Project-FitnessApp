@@ -2,10 +2,6 @@ import styled from 'styled-components'
 
 
 export const HomeContainer = styled.div`
-.slider {
-margin-right: 55.5px!important;
-margin-left: 55.5px!important; 
-}
 
 h2{
   text-align:center;
@@ -19,17 +15,10 @@ h2{
   justify-content: space-around;
 }
 
-.slide {
-  width: 30rem;
-  text-align: center;
-  line-height: 25px;
-  margin: 16px 0px 16px 0px; 
-}
 .slide img {
-    width: 30rem;
-  height: 30rem;
-  text-align: center;
-  border-radius: 5px;
+    width: 280px;
+height: 260px;
+border-radius: 4px;
 }
 
 .slide:hover img {
@@ -44,13 +33,13 @@ h2{
     color: white;
     border: 1px solid black;
     justify-content: center;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 23px;
+    padding-right: 23px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 13.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 13px;
     border-radius: 4px;
     letter-spacing: 4px;
 }
@@ -168,26 +157,15 @@ h2{
 .slick-arrow.slick-hidden {
     display: none;
 }
- 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-    .column img {
-        width: 100%;
-      width: 45rem!important;
-    }
-}
 
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .slide img {
+    height: 235px;
+    width: 226px!important;
+  }
+} */
 
 `

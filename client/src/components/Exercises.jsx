@@ -45,7 +45,7 @@ export default class Exercises extends Component {
         difficulty: this.state.newExercise.difficulty
       })
       .then(res => {
-        const exercisesList = [this.state.exercises];
+        const exercisesList = [...this.state.exercises];
         exercisesList.unshift(res.data);
         this.setState({
           newExercise: {
@@ -81,7 +81,7 @@ export default class Exercises extends Component {
   render() {
     return (
       <div>
-        <div className="bg-dark text-white workout-margin workout-jumbo">
+        <div className="bg-dark exercise-container text-light workout-margin workout-jumbo">
           <img
             className="card-img"
             src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2018010345124/best-free-gym-deals-of-new-year-2019/0-228-119/girls-exercising-z.jpg"
@@ -90,12 +90,10 @@ export default class Exercises extends Component {
           />
           <div className="card-img-overlay">
             <h1
-              className="display-5 training-header centered workout-all-margin"
+              className="display-5 centered workout-all-margin p-2 text-light"
               style={{
-                color: "white",
                 fontWeight: "bold",
-                fontSize: "4vw",
-                padding: "15px"
+                fontSize: "4vw"
               }}
             >
               GET YOUR WORKOUT IN
@@ -103,14 +101,13 @@ export default class Exercises extends Component {
           </div>
         </div>
         <div
-          class="jumbotron jumbotron-fluid"
-          style={{ backgroundColor: "white", color: "black" }}
+          className="jumbotron jumbotron-fluid bg-light text-dark"
         >
-          <div class="container text-center">
-            <h2 class="display-4 sub-header">
+          <div className="container text-center">
+            <h2 className="display-4 sub-header">
               PERSONAL TRAINING AT ATLANTA CYCLE CLUB
             </h2>
-            <p class="lead">
+            <p className="lead">
               You can, and you will. With the right personal trainer, you’re
               partners in the impossible.
             </p>
@@ -118,16 +115,13 @@ export default class Exercises extends Component {
           </div>
         </div>
 
-        <div className="card-flex">
+        <div className="container">
+        <div className="row text-center">
           {this.state.exercises.map(exercise => {
             return (
-              <div key={exercise._id} className="card-flex">
-                <div
-                  className="card bg-dark text-white"
-                  style={{ maxWidth: "530px", marginTop: "30px" }}
-                >
+              <div key={exercise._id} className="col-md-6 p-4 text-light mt-3">
                   <img
-                    className="card-img"
+                    className="exercise-img img-fluid"
                     src={exercise.fitnessImg}
                     alt={exercise.type}
                   />
@@ -136,19 +130,17 @@ export default class Exercises extends Component {
                       <Link
                         to={`/exercises/${exercise._id}/`}
                         key={exercise._id}
-                        className="workout-link"
+                        className="workout-link text-light"
                       >
                         {exercise.type}
                       </Link>
                     </h3>
                   </div>
                 </div>
-              </div>
             );
           })}
         </div>
-        <br />
-        <br />
+        </div>
         <div
           className="jumbotron jumbotron-fluid recipe-jumbotron"
           style={{ backgroundColor: "#e3dfda" }}
