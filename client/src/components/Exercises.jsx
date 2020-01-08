@@ -111,7 +111,7 @@ export default class Exercises extends Component {
               You can, and you will. With the right personal trainer, you’re
               partners in the impossible.
             </p>
-            <button className="start-button">GET STARTED TODAY</button>
+            <button className="start-button bg-dark text-light">GET STARTED TODAY</button>
           </div>
         </div>
 

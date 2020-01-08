@@ -110,14 +110,14 @@ class SingleRecipe extends Component {
               }}
             >
               <Button
-                className="edit-recipe-button"
+                className="edit-recipe-button bg-dark text-light"
                 onClick={this.toggleEditForm}
               >
                 EDIT
               </Button>
 
               <Button
-                className="delete-recipe-button"
+                className="delete-recipe-button bg-dark text-light"
                 onClick={this.deleteRecipe}
               >
                 DELETE
@@ -186,7 +186,7 @@ class SingleRecipe extends Component {
               />
             </Form.Group>
             <div className="text-center" style={{ marginTop: "20px" }}>
-              <Button className="text-center submit-button">SUBMIT</Button>
+              <Button className="text-center submit-button bg-dark text-light">SUBMIT</Button>
             </div>
           </Form>
         ) : null}

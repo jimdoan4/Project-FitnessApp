@@ -13,36 +13,36 @@ export default class Home extends Component {
             style={{ opacity: "75%" }}
           />
           <div className="card-img-overlay text-center">
-            <h2 className="display-5 centered main-header workout-all-margin">
+            <h3 className="display-5 centered main-header workout-all-margin">
               ATLANTA CYCLE CLUB
-            </h2>
+            </h3>
           </div>
         </div>
 
         <div className="jumbotron jumbotron-fluid bg-light text-dark">
           <div className="container text-center">
-            <h2 className="display-4 sub-header">
+            <h3 className="display-4 sub-header">
               PERSONAL TRAINING AT ATLANTA CYCLE CLUB
-            </h2>
+            </h3>
             <p className="lead">
               You can, and you will. With the right personal trainer, you’re
               partners in the impossible.
             </p>
-            <button className="start-button">GET STARTED TODAY</button>
+            <button className="start-button bg-dark text-light">GET STARTED TODAY</button>
           </div>
         </div>
 
         <div className="container-fluid mb-5 benefit-container">
           <div className="row ml-5 mr-5">
             <div className="col-md-6">
-              <h1 className="mt-5 display-4 sub-header text-center">
+              <h3 className="mt-5 display-4 sub-header text-center">
                 MEMBERSHIP WITH BENEFITS
-              </h1>
-              <h2 className="text-center">
+              </h3>
+              <h5 className="text-center">
                 Unlimited Group Fitness is just the beginning. Discover all the
                 ways you could unlock your potential with a membership—including
                 luxe amenities and exceptional services.
-              </h2>
+              </h5>
             </div>
             <div className="col-md-6">
               <img
@@ -76,10 +76,10 @@ export default class Home extends Component {
               <img src="https://cdn.newsapi.com.au/image/v1/29b133ac13b2dcd80f31916d1ec13837?width=1024" />
               <button className="button-centered fitness-button">LEGS</button>
             </div>
-            <div className="slide col-md-3">
+            {/* <div className="slide col-md-3">
               <img src="https://www.shape.com/sites/shape.com/files/styles/facebook_og_image/public/story/pushup-girl.jpg" />
               <button className="button-centered fitness-button">ARMS</button>
-            </div>
+            </div> */}
           </section>
         </HomeContainer>
 
@@ -89,24 +89,24 @@ export default class Home extends Component {
             <div className="col-md-3">
               <img src="https://cdn.apartmenttherapy.info/image/upload/v1564775676/k/Photo/Recipes/2019-08-how-to-juiciest-turkey-meatballs/How-to-Make-the-Best-Juiciest-Turkey-Meatballs_055.jpg" />
 
-              <h3 className="mt-4">Smooth and Sweet Tomato Meatballs</h3>
+              <h5 className="mt-4">Smooth and Sweet Tomato Meatballs</h5>
             </div>
             <div className="col-md-3">
               <img src="https://ob8qxdtnu3-flywheel.netdna-ssl.com/wp-content/uploads/2019/01/Crispy-Cauliflower-Tacos-036.jpg" />
 
-              <h3 className="mt-4">Savory Chicken Tacos with Glazed Honey</h3>
+              <h5 className="mt-4">Savory Chicken Tacos with Glazed Honey</h5>
             </div>
             <div className="col-md-3">
               <img src="https://purewows3.imgix.net/images/articles/2018_01/balsamic-cranberry-roast-chicken.jpg?auto=format,compress&cs=strip" />
 
-              <h3 className="mt-4">Baked Organic Chicken with Vegetables</h3>
+              <h5 className="mt-4">Baked Organic Chicken with Vegetables</h5>
             </div>
             <div className="col-md-3">
               <img className="img-fluid" src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/epic-summer-salad.jpg" />
 
-              <h3 className="mt-4">
+              <h5 className="mt-4">
                 Fresh Organic Mixed Greens with Savory Sweet dressing
-              </h3>
+              </h5>
             </div>
           </div>
         </div>

@@ -7,52 +7,32 @@ class Navigation extends Component {
   render() {
     return (
       <NavContainer>
-        <Navbar className="nav" expand="lg" fixed="top">
-          <Navbar.Toggle
-            className="nav-button"
-            aria-controls="basic-navbar-nav"
-          />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link className="home-link" href="/">
-                HOME
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/exercises/">
-                TRAINING
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/recipes/">
-                RECIPES
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="/shop/">
-                SHOP
-              </Nav.Link>
-            </Nav>
-            {/* <Nav.Link>
-              <img
-                src="https://svgshare.com/i/5fq.svg"
-                width="32"
-                style={{ width: "30px" }}
-              />
-            </Nav.Link>
-            <Nav.Link>
-              <img
-                src="https://svgshare.com/i/5eA.svg"
-                width="32"
-                style={{ width: "30px" }}
-              />
-            </Nav.Link>
-            <Nav.Link>
-              <img
-                src="https://svgshare.com/i/5f_.svg"
-                width="32"
-                style={{ width: "30px" }}
-              />
-            </Nav.Link> */}
-          </Navbar.Collapse>
-        </Navbar>
+           <nav class="navbar navbar-expand-md fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+                <span class="fa fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav m-auto text-light">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/exercises/">TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/recipes/">RECIPES</a>
+                    </li> 
+                    <li class="nav-item">
+                            <a class="nav-link" href="/shop/">SHOP</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
       </NavContainer>
     );
   }
 }
 
 export default Navigation;
+

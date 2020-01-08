@@ -82,7 +82,7 @@ export default function ExerciseForm(props) {
    
         </div>
         <div className="text-center form-group">
-        <button className="exercise-submit-button">
+        <button className="exercise-submit-button bg-dark text-light">
           {props.submitBtnText}
         </button>
         </div>

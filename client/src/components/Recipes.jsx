@@ -121,7 +121,7 @@ export default class Recipes extends Component {
                       <Link
                         to={`/recipes/${recipe._id}/`}
                         key={recipe._id}
-                        className="recipe-link button-centered recipe-button"
+                        className="recipe-link button-centered recipe-button bg-dark text-light"
                       >
                         VIEW RECIPE
                       </Link>

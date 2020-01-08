@@ -114,14 +114,14 @@ class SingleExercise extends Component {
               }}
             >
               <Button
-                className="edit-exercise-button"
+                className="edit-exercise-button bg-dark text-light"
                 onClick={this.toggleEditForm}
               >
                 EDIT
               </Button>
 
               <Button
-                className="delete-exercise-button"
+                className="delete-exercise-button bg-dark text-light"
                 onClick={this.deleteExercise}
               >
                 DELETE
@@ -190,7 +190,7 @@ class SingleExercise extends Component {
               />
             </Form.Group>
             <div className="text-center" style={{ marginTop: "20px" }}>
-              <Button className="text-center submit-button">SUBMIT</Button>
+              <Button className="text-center submit-button bg-dark text-light">SUBMIT</Button>
             </div>
           </Form>
         ) : null}

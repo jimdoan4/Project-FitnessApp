@@ -62,7 +62,7 @@ export default function RecipeForm(props) {
           />
         </div>
         <div className="form-group text-center">
-          <button className="recipe-submit-button">SUBMIT</button>
+          <button className="recipe-submit-button bg-dark text-light">SUBMIT</button>
         </div>
       </form>
     </RecipeFormContainer>

@@ -2,115 +2,74 @@ import styled from 'styled-components'
 
 
 export const FooterContainer = styled.div`
-.footer {
-  width: 100%;
-  position: relative;
-  height: auto!important;
+
+section {
+            padding: 60px 0;
+        }
+ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 21px;
+    margin: 30px 60px;
+    position: relative;
+}
+
+.contact-content h6 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: white;
+    background: black;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid white;
+    color: black;
+    background: white;
+}
+
+section, footer {
   background-color: #e3dfda;
-  color: black;
-}
-.footer .col {
-  width: 190px;
-  height: 60px!important;
-  float: left;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
-}
-.footer .col h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 17px;
-  padding: 20px 0px 5px 0px;
-  color: black;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.250em;
-}
-.footer .col ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.footer .col ul li {
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 5px 0px 5px 0px;
-  cursor: pointer;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
+    color: black;
 }
 
-.footer-link {
-  color: black;
-  font-weight: bold;
-}
-
-.footer-link:hover {
-font-weight: bold;
-  color: white!important;
-}
-
-.social ul li {
-  display: inline-block;
-  padding-right: 5px !important;
-}
-
-.footer .col ul li:hover {
-  color: black;
-  font-weight: bold;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-}
-.clearfix {
-  clear: both;
-}
-@media only screen and (min-width: 1280px) {
-  .contain {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 1139px) {
-  .contain .social {
-    width: 1000px;
-    display: block;
-  }
-  .social h1 {
-    margin: 0px;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .footer .col {
-    width: 33%;
-  }
-  .footer .col h1 {
-    font-size: 14px;
-  }
-  .footer .col ul li {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 500px) {
-    .footer .col {
-      width: 50%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-}
-@media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
-  }
+footer p {
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: -90px;
 }
 
 
