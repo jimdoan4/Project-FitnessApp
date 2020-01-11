@@ -87,16 +87,15 @@ export default class Recipes extends Component {
         >
           <img
             className="card-img"
-            src="https://www.weightwatchers.com/ca/sites/ca/files/styles/wwvs_default_image/public/article_masthead/chicken_masthead_0.jpg?itok=OOndQXF-"
+            src="https://www.forksoverknives.com/wp-content/uploads/no-fry-fried-rice.jpg"
             alt="Recipe"
-            style={{opacity: "75%"}}
+            style={{opacity: "80%"}}
           />
           <div className="card-img-overlay">
             <h1
-              className="display-5 recipe-header centered workout-all-margin text-light p-2"
+              className="display-5 recipe-header centered font-weight-bold workout-all-margin text-light p-2"
               style={{
-                fontWeight: "bold",
-                fontSize: "4vw"
+                fontSize: "6vw"
               }}
             >
               RECIPES AND TIPS
@@ -116,7 +115,7 @@ export default class Recipes extends Component {
                       alt={recipe.recipeName}
   
                     />
-                    <h3>{recipe.recipeName}</h3>
+                    <h5>{recipe.recipeName}</h5>
                     <div className="button-centered text-center">
                       <Link
                         to={`/recipes/${recipe._id}/`}

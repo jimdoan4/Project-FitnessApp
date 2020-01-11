@@ -1,30 +1,27 @@
 import React, { Component } from "react";
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
 import { NavContainer } from "./styled-components/NavStyle";
 
-class Navigation extends Component {
-  render() {
+function Navigation () {
     return (
       <NavContainer>
-           <nav class="navbar navbar-expand-md fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
+           <nav className="navbar navbar-expand-md fixed-top">
+            <button className="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive">
-                <span class="fa fa-bars text-dark"></span>
+                <span className="fa fa-bars text-light lead"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav m-auto text-light">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">HOME</a>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+                <ul className="navbar-nav m-auto text-light">
+                    <li className="nav-item">
+                        <a className="nav-link active" href="/">HOME</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/exercises/">TRAINING</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/exercises/">TRAINING</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/recipes/">RECIPES</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/recipes/">RECIPES</a>
                     </li> 
-                    <li class="nav-item">
-                            <a class="nav-link" href="/shop/">SHOP</a>
+                    <li className="nav-item">
+                            <a className="nav-link" href="/shop/">SHOP</a>
                         </li>
                 </ul>
             </div>
@@ -32,7 +29,8 @@ class Navigation extends Component {
       </NavContainer>
     );
   }
-}
+
 
 export default Navigation;
+
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { RecipeFormContainer } from "./styled-components/RecipeFormStyle";
 
 export default function RecipeForm(props) {

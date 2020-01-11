@@ -3,6 +3,34 @@ body {
   font-family: "Lato", sans-serif !important;
 }
 
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.home-landing-img {
+  background: url(https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2019040971870/sweat-trainer-kelsey-wells-fitness-tips-new-mums/0-350-475/Kelsey-Wells-t.jpg) no-repeat center center;
+  background-size: cover;
+  height: 640px;
+}
+
+.home-header {
+  position: relative;
+  top: 295px;
+  text-align: center;
+}
+
+.home-header h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 70px;
+  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
 .sub-header {
   font-family: 'Heebo', sans-serif;
   font-family: 'Yantramanav', sans-serif;
@@ -35,7 +63,6 @@ body {
   width: 100%;
   padding: 20px;
 }
-
 
 
 .overlay-desc {
@@ -116,7 +143,8 @@ body {
 }
 
 .card-img {
-  max-height: 740px;
+  height: 640px;
+  max-height: 800px;
   border-radius: 5px;
   box-shadow: 1px 0px 1px 0px #b3b3b3;
 }
@@ -235,8 +263,8 @@ body {
 
 /*************************** Recipe Section **********************/
 .recipe-section img {
-width: 280px;
-height: 260px;
+width: 230px;
+height: 240px;
 border-radius: 4px;
 }
 
@@ -302,11 +330,34 @@ border-radius: 4px;
     height: 23rem;
   }
 
+  .card-img {
+    height: 380px;
+  }
+
+  .home-landing-img {
+    background: url(https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2019040971870/sweat-trainer-kelsey-wells-fitness-tips-new-mums/0-350-475/Kelsey-Wells-t.jpg) no-repeat center center;
+    background-size: cover;
+    height: 380px;
+  }
+
+  .home-header {
+    position: relative;
+    top: 180px;
+
+  }
+  
+  .home-header h1 {
+    font-size: 30px;
+  }
+
   .recipe-header {
     font-weight: bold;
     font-size: 7vw !important;
   }
 
+  .member-img {
+    height: 238px!important;
+  }
 
   .exercise-container h1 {
     font-weight: bold;
@@ -349,7 +400,6 @@ border-radius: 4px;
   .recipe-section h3 {
    margin-bottom: 36px;
     }
-  
 }
 
 @media only screen 
@@ -358,7 +408,7 @@ and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 2) { 
   .slider-container img {
     height: 238px!important;
-    width: 226px!important;
+    width: 200px!important;
   }
 
   .recipe-section img {

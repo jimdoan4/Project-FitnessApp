@@ -16,8 +16,8 @@ h2{
 }
 
 .slide img {
-    width: 280px;
-height: 260px;
+width: 230px;
+height: 240px;
 border-radius: 4px;
 }
 

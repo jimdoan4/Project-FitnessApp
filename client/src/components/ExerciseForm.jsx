@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { ExerciseContainer } from "./styled-components/ExerciseStyle";
 
 export default function ExerciseForm(props) {

@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Shop extends Component {
-  render() {
+function Shop () {
     return (
       <div>
         <div className="bg-dark text-white shop-img-container workout-margin workout-jumbo">
@@ -13,10 +12,9 @@ export default class Shop extends Component {
           />
           <div className="card-img-overlay text-center">
             <h2
-              className="display-5 centered workout-all-margin p-2 text-light"
+              className="display-5 centered workout-all-margin font-weight-bold p-2 text-light"
               style={{
-                fontWeight: "bold",
-                fontSize: "3.5vw"
+                fontSize: "6vw"
               }}
             >
               THE SHOP AT ATLANTA CYCLE CLUB
@@ -29,11 +27,11 @@ export default class Shop extends Component {
             <h1 className="display-4 text-center">
               ATLANTA CYCLE PERFORMANCE WEAR
             </h1>
-            <h2 className="text-center">
+            <h5 className="text-center">
               Introducing the first Performance Wear line. Get it at The Shop
               now. We’ve taken our obsession for fitness and channeled it into
               creating the perfect collection of activewear.
-            </h2>
+            </h5>
           </div>
           <div className="col-md-6">
             <img
@@ -56,15 +54,16 @@ export default class Shop extends Component {
             <h1 className="display-4 text-center">
               MEMBERSHIP WITH BENEFITS
             </h1>
-            <h2 className="text-center">
+            <h5 className="text-center">
               Unlimited Group Fitness is just the beginning. Discover all the
               ways you could unlock your potential with a membership—including
               luxe amenities and exceptional services.
-            </h2>
+            </h5>
           </div>
         </div>
         </div>
       </div>
     );
   }
-}
+
+export default Shop;

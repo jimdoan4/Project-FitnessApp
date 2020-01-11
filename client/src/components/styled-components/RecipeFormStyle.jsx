@@ -30,8 +30,8 @@ margin-right: 170px;
     color: black;
     border: 1px solid #f7f6f5;
     justify-content: center;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 75px;
+    padding-right: 75px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 12px;
@@ -39,7 +39,7 @@ margin-right: 170px;
     border-radius: 4px;
     letter-spacing: 4px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 15px;
 }
 
 .recipe-submit-button:hover {

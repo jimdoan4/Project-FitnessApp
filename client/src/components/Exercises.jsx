@@ -86,14 +86,13 @@ export default class Exercises extends Component {
             className="card-img"
             src="https://www.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2018010345124/best-free-gym-deals-of-new-year-2019/0-228-119/girls-exercising-z.jpg"
             alt="Workout"
-            style={{ opacity: "75%" }}
+            style={{ opacity: "80%" }}
           />
           <div className="card-img-overlay">
             <h1
-              className="display-5 centered workout-all-margin p-2 text-light"
+              className="display-5 centered workout-all-margin p-2 font-weight-bold text-light"
               style={{
-                fontWeight: "bold",
-                fontSize: "4vw"
+                fontSize: "6vw"
               }}
             >
               GET YOUR WORKOUT IN

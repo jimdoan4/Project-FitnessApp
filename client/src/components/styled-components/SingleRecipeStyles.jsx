@@ -39,7 +39,7 @@ export const SingleRecipeContainer=styled.div `
     border-radius: 4px;
     letter-spacing: 4px;
     padding: 15px 30px 15px 30px;
-    font-size: 1.3rem;
+    font-size: 15px;
 }
 
 .edit-recipe-button:hover {
@@ -57,7 +57,7 @@ export const SingleRecipeContainer=styled.div `
     border-radius: 4px;
     letter-spacing: 4px;
     padding: 15px 30px 15px 30px;
-    font-size: 1.3rem;
+    font-size: 15px;
 }
 
 .delete-recipe-button:hover {
@@ -78,7 +78,7 @@ export const SingleRecipeContainer=styled.div `
     border-radius: 4px;
     letter-spacing: 4px;
     padding: 10px 20px 10px 20px;
-    font-size: 1.3rem;
+    font-size: 15px;
 }
 
 .submit-button:hover {

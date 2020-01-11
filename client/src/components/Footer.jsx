@@ -1,41 +1,54 @@
-import React, { Component } from "react";
-import { Nav } from "react-bootstrap";
+import React from "react";
 import { FooterContainer } from "./styled-components/FooterStyle";
 
-class Footer extends Component {
-  render() {
-    return (
-
-<FooterContainer>
-<footer>
-<section class="contact-area" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="contact-content text-center">
-                    
-                    <h6>Atlanta Cycle Club</h6>
-                    <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
-                    <div class="contact-social">
-                        <ul>
-                            <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
-                            <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li>
-                        </ul>
-                    </div>
+function Footer() {
+  return (
+    <FooterContainer>
+      <footer>
+        <section className="contact-area" id="contact">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 offset-lg-3">
+                <div className="contact-content text-center">
+                  <h6>ATLANTA CYCLE CLUB</h6>
+                  <div className="contact-social">
+                    <ul>
+                      <li>
+                        <a className="hover-target" href="">
+                          <i className="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="hover-target" href="">
+                          <i className="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="hover-target" href="">
+                          <i className="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="hover-target" href="">
+                          <i className="fab fa-behance"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="hover-target" href="">
+                          <i className="fab fa-pinterest-p"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-    <p>Copyright &copy; 2019 Atlanta Cycle Club</p>
-</footer>
-
-      </FooterContainer>
-    );
-  }
+          </div>
+        </section>
+        <p>Copyright &copy; 2019 ATLANTA CYCLE CLUB</p>
+      </footer>
+    </FooterContainer>
+  );
 }
 
 export default Footer;

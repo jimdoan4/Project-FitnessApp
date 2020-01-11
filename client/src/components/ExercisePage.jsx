@@ -9,11 +9,9 @@ export default class ExercisePage extends Component {
 
   render() {
     return (
-      <div> 
         <Container className="text-center">
               <SingleExercise exerciseId={this.state.exerciseId} />
         </Container>
-      </div>
     );
   }
 }

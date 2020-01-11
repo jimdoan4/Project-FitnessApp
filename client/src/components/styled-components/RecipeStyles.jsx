@@ -36,11 +36,11 @@ font-family: "Lato", sans-serif !important;
 
 .recipe-submit-button {
     background-color: #f7f6f5;
-    color: white;
+    color: black;
     border: 1px solid #f7f6f5;
     justify-content: center;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 75px;
+    padding-right: 75px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 12px;
@@ -48,7 +48,7 @@ font-family: "Lato", sans-serif !important;
     border-radius: 4px;
     letter-spacing: 4px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 15px;
 }
 
 .recipe-submit-button:hover {
@@ -79,7 +79,7 @@ font-family: "Lato", sans-serif !important;
 
 .recipe-button:hover {
     box-shadow: 6px 3px 12px 4px #f7f6f5;
-    color: black!important;
+    color: white!important;
     background: white;
     border: 1px solid #f7f6f5;
     text-decoration: none;
@@ -95,8 +95,8 @@ font-family: "Lato", sans-serif !important;
     font-size: 7vw!important;
  }
  .recipe-img {  
-    width: 255px;
-    height: 230px;
+    width: 225px;
+    height: 210px;
   }
 }
 

@@ -9,11 +9,9 @@ export default class RecipePage extends Component {
 
   render() {
     return (
-      <div> 
         <Container className="text-center">
               <SingleRecipe recipeId={this.state.recipeId} />
         </Container>
-      </div>
     );
   }
 }
