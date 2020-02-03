@@ -6,7 +6,7 @@ function Home() {
     <div>
       <div className="jumbotron home-landing-img">
         <div className="container">
-          <div className="home-header">
+          <div className="home-header wow bounceInDown" data-wow-delay="0.2s">
             <h1>ATLANTA CYCLE CLUB</h1>
           </div>
         </div>
@@ -28,7 +28,7 @@ function Home() {
 
       <div className="container-fluid mb-5 benefit-container">
         <div className="row ml-5 mr-5">
-          <div className="col-md-6">
+          <div className="col-md-6 animated wow bounceInDown" data-wow-delay="0.2s">
             <h3 className="mt-5 display-4 sub-header text-center">
               MEMBERSHIP WITH BENEFITS
             </h3>
@@ -38,7 +38,7 @@ function Home() {
               luxe amenities and exceptional services.
             </h5>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 animated wow bounceInUp" data-wow-delay="0.2s">
             <img
               className="member-img img-fluid"
               src="https://media1.popsugar-assets.com/files/thumbor/gNPMqznk7wYWIs_g8w9QWDeIg-c/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/01/18/748/n/1922729/tmp_g13kI4_210fdc7e610ec25d_GettyImages-891326080.jpg"

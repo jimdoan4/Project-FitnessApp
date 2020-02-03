@@ -8,7 +8,7 @@ export const SingleRecipeContainer=styled.div `
 
 
 .recipe-title {
-    font-size: 1.7rem;
+    font-size: 15px;
 }
 
 .recipe-main-title {
@@ -19,11 +19,11 @@ export const SingleRecipeContainer=styled.div `
 }
 
 .recipe-img {
-   display: block;
+    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 53%;
-  max-height: 48rem;
+  max-width: 420px;
+  max-height: 400px;
   border-radius: 5px;
   box-shadow: 1px 0px 1px 0px #b3b3b3;
 

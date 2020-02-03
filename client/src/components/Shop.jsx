@@ -23,7 +23,7 @@ function Shop () {
         </div>
         <div className="container-fluid mt-5 shop-container">
           <div className="row ml-5 mr-5">
-            <div className="col-md-6">
+            <div className="col-md-6 animated slideInLeft">
             <h1 className="display-4 text-center">
               ATLANTA CYCLE PERFORMANCE WEAR
             </h1>
@@ -33,7 +33,7 @@ function Shop () {
               creating the perfect collection of activewear.
             </h5>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 animated slideInRight">
             <img
               className="img-fluid"
               src="http://fitblog.com.tr/wp-content/uploads/2019/10/shutterstock_1185036736-1024x683.jpg"
@@ -44,13 +44,13 @@ function Shop () {
        
         <div className="container-fluid mb-5 mt-4 shop-container">
           <div className="row ml-5 mr-5">
-            <div className="col-md-6">
+            <div className="col-md-6 animated slideInLeft">
             <img
               className="img-fluid"
               src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2012%2F05%2F16182731%2Fhiit-workouts-for-women-weight-loss.jpg&q=85"
             />
           </div>
-          <div className="col-md-6 mb-3 mt-4">
+          <div className="col-md-6 mb-3 mt-4 animated slideInRight">
             <h1 className="display-4 text-center">
               MEMBERSHIP WITH BENEFITS
             </h1>
