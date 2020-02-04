@@ -2,8 +2,48 @@ import styled from 'styled-components'
 
 
 export const FooterContainer = styled.div`
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 60px 30px 60px!important;
+  color: black;
+  background-color: #e3dfda;
+  border-top: 1px solid #e5e5e5;
+}
 
-section {
+.footer > * {
+  flex:  1 100%;
+}
+
+p {
+    margin: 0px 0px -16px 0px;
+}
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: .8px;
+  font-weight: 600;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+  letter-spacing: .8px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+}
+/* section {
             padding: 60px 0;
         }
 ul {
@@ -70,7 +110,7 @@ footer p {
     padding: 40px 0;
     text-align: center;
     margin-bottom: -90px;
-}
+} */
 
 
 `

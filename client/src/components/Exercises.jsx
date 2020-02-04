@@ -92,7 +92,7 @@ export default class Exercises extends Component {
             <h1
               className="display-5 centered workout-all-margin p-2 font-weight-bold text-light"
               style={{
-                fontSize: "6vw"
+                fontSize: "5vw"
               }}
             >
               GET YOUR WORKOUT IN

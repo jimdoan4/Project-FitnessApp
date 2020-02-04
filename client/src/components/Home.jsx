@@ -76,7 +76,7 @@ function Home() {
       </HomeContainer>
 
       <div className="container-fluid mb-4">
-        <h2 className="text-center sub-header mb-5">DELICIOUS RECIPES</h2>
+        <h2 className="text-center sub-header mb-4">DELICIOUS RECIPES</h2>
         <div className="row pl-5 pr-5 text-center recipe-section">
           <div className="col-md-3">
             <img src="https://cdn.apartmenttherapy.info/image/upload/v1564775676/k/Photo/Recipes/2019-08-how-to-juiciest-turkey-meatballs/How-to-Make-the-Best-Juiciest-Turkey-Meatballs_055.jpg" />
@@ -84,7 +84,7 @@ function Home() {
             <h5 className="mt-4">Smooth and Sweet Tomato Meatballs</h5>
           </div>
           <div className="col-md-3">
-            <img src="https://ob8qxdtnu3-flywheel.netdna-ssl.com/wp-content/uploads/2019/01/Crispy-Cauliflower-Tacos-036.jpg" />
+            <img src="https://www.dinneratthezoo.com/wp-content/uploads/2017/10/slow-cooker-chicken-tacos-14.jpg" />
 
             <h5 className="mt-4">Savory Chicken Tacos with Glazed Honey</h5>
           </div>

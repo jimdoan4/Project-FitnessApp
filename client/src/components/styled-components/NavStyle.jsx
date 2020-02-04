@@ -11,10 +11,11 @@ export const NavContainer = styled.div`
     letter-spacing: 1px;
   }
   
-
   .navbar-nav li {
     padding-right: .96rem;
     color: white!important;
+    margin: 0px 25px;
+    font-weight: bold;
   }
   
   .navbar-nav .nav-link {
@@ -29,9 +30,22 @@ export const NavContainer = styled.div`
   }
   
   .navbar.solid {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: white !important;
     transition: background-color 1s ease 0s;
   }
+
+
+  @media (max-width: 967px) {
+  /*hide nav by transform*/
+  .navbar-nav {
+   text-align: center;
+    background-color: white;
+    background-size: cover;
+  
+  }
+}
+
+
 
 `
 

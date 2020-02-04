@@ -4,10 +4,10 @@ import { NavContainer } from "./styled-components/NavStyle";
 function Navigation () {
     return (
       <NavContainer>
-           <nav className="navbar navbar-expand-md fixed-top">
+           <nav className="navbar navbar-expand-lg fixed-top">
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive">
-                <span className="fa fa-bars text-light lead"></span>
+                <span className="fa fa-bars text-light lead font-weight-bold"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav m-auto text-light">

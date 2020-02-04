@@ -70,7 +70,7 @@ margin-right: -170px;
     margin-left: -170px;
 margin-right: -170px;
  
-}
+ }
 }
 
 `

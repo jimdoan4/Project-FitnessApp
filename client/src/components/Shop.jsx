@@ -14,7 +14,7 @@ function Shop () {
             <h2
               className="display-5 centered workout-all-margin font-weight-bold p-2 text-light"
               style={{
-                fontSize: "6vw"
+                fontSize: "5vw"
               }}
             >
               THE SHOP AT ATLANTA CYCLE CLUB

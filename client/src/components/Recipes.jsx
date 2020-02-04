@@ -95,7 +95,7 @@ export default class Recipes extends Component {
             <h1
               className="display-5 recipe-header centered font-weight-bold workout-all-margin text-light p-2"
               style={{
-                fontSize: "6vw"
+                fontSize: "5vw"
               }}
             >
               RECIPES AND TIPS
